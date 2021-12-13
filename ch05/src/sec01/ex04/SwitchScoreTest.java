@@ -12,13 +12,13 @@ public class SwitchScoreTest {
 		int mok = score / 10;
 		
 		switch(mok) {
-		case 10, 9:
+		case 9, 10:
 			System.out.println("매우 우수합니다.");
 			break;
-		case 8, 7:
+		case 7, 8:
 			System.out.println("우수합니다.");
 			break;
-		case 6, 5:
+		case 5, 6:
 			System.out.println("양호합니다.");
 			break;
 		default:

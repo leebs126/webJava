@@ -10,7 +10,7 @@ public class SwitchDayTest {
 		int day = sc.nextInt();
 		
 		//switch문과 if-else if문과 변환이 되는 경우
-		//1. 조건식에서 동등 비교 연산자(==)가 사용되는 경우
+		//1. 조건식에서 동등 비교 연산자(==)나 equals()메서드를 사용되는 경우
 		//2. 조건식에서 사용되는 데이터가 정수이거나 문자열인 경우
 		
 //		switch(3.0) {
