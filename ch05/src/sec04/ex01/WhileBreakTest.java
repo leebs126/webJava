@@ -2,13 +2,15 @@ package sec04.ex01;
 
 import java.util.Scanner;
 
-public class BreakWhileTest {
+public class WhileBreakTest {
 
 	public static void main(String[] args) {
 		  int num = 0;
 	      Scanner sc = new Scanner(System.in);
 
 	      while(true) {
+//	      for(;;) {
+//	      for(;true;) {
 	         System.out.println("---------------------------------------");
 	         System.out.println("1:회원, 2:렌터카, 3:예약, 4:종료 ");
 	         System.out.println("---------------------------------------");
