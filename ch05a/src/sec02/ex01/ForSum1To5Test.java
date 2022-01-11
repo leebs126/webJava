@@ -1,6 +1,6 @@
 package sec02.ex01;
 
-public class FormSum1To5Test {
+public class ForSum1To5Test {
 
 	public static void main(String[] args) {
 		int sum = 0;
