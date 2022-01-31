@@ -12,7 +12,7 @@ public class TwoDimArrayValueSettingTest2 {
 //			}
 //		}
 
-		// 값을 2로 세팅합니다.
+		// 값을 1과 2로 세팅합니다.
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[i].length; j++) {
 				if(i + j < 10) {
