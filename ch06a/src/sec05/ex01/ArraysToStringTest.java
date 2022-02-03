@@ -11,8 +11,8 @@ public class ArraysToStringTest {
 			System.out.print(arr1[i] +", ");
 		}
 		
-//		System.out.println();
-//		System.out.println(Arrays.toString(arr1));
+		System.out.println();
+		System.out.println(Arrays.toString(arr1));
 
 	}
 
