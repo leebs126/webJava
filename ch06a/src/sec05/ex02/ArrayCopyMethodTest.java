@@ -26,7 +26,7 @@ public class ArrayCopyMethodTest {
 //		System.out.println(Arrays.toString(arr4));
 		
 		System.arraycopy(arr1, 0, arr4, 0, arr1.length);
-		System.arraycopy(arr2, 0, arr4, arr2.length, arr2.length);
+		System.arraycopy(arr2, 0, arr4, arr1.length, arr2.length);
 		System.out.println(Arrays.toString(arr4));
 		
 		
