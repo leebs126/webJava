@@ -36,6 +36,7 @@ public class ex05 {
 		for(int i=0; i< num3.length;i++) {
 			System.out.print(num3[i] +" ");
 		}
+		
 
 	}
 
