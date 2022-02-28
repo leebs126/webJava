@@ -12,6 +12,9 @@ public class MethodTest3 {
 		MethodTest3 m = new MethodTest3();
 		int result = m.digitSum(num);
 		System.out.println(num + "의 자리수의 합 : " + result);
+		
+		sc.close();
+		System.out.println("종료");
 
 	}
 
