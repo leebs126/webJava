@@ -1,4 +1,4 @@
-package sec01.ex01;
+package sec01.ex02;
 
 public class Student {
 	String name;
@@ -12,5 +12,6 @@ public class Student {
 		System.out.println("국어 시험을 칩니다.");
 		return 85;
 	}
+
 
 }

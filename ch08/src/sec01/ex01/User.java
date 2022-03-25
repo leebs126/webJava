@@ -1,9 +1,9 @@
 package sec01.ex01;
 
 public class User {
-	private String name;
-	private String address;
-	private String phoneNum;
+	String name;
+	String address;
+	String phoneNum;
 
 	public String rentCar() {
 		return "그랜저";

@@ -1,8 +1,11 @@
-package sec01.ex01;
+package sec01.ex02;
 
 public class Student {
+	// 속성을 필드로 구현한다.
 	String name;
 	int grade;
+
+	// 기능을 메소드로 구현합니다.
 
 	public void study() {
 		System.out.println("공부를 합니다.");
