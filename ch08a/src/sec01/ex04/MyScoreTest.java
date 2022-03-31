@@ -18,7 +18,7 @@ public class MyScoreTest {
 		int avg = myMath.round(_avg);
 		
 		System.out.print(name[0] +"의 시험 점수 : ");
-		myArray.arraysortAsc(score1);
+		myArray.arraySortAsc(score1);
 		System.out.println("\n총점 : " + total);
 		System.out.println("평균 : " + avg);
 		System.out.println("--------------------------------");
@@ -28,7 +28,7 @@ public class MyScoreTest {
 		_avg = myMath.average(total, score2.length);
 		avg = myMath.round(_avg);
 		System.out.print(name[1] +"의 시험 점수 : ");
-		myArray.arraysortAsc(score2);
+		myArray.arraySortAsc(score2);
 		System.out.println("\n총점 : " + total);
 		System.out.println("평균 : " + avg);
 		
