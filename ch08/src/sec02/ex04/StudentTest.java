@@ -1,4 +1,4 @@
-package sec02.ex02;
+package sec02.ex04;
 
 public class StudentTest {
 
