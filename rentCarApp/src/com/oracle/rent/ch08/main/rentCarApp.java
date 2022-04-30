@@ -20,7 +20,7 @@ public class rentCarApp {
 		// 회원 ,차, 예약 정보 등록
 		member.regMember("lee", "1234", "이순신", "서울시 도봉구", "010-1111-2222");;
 		car.regCarInfo("11가1111", "소나타", "검정", 2000, "현대");
-		reserve.resCar("11가1111", "2022-04-30", "2022-05-01", "2022-0508");
+		reserve.resCar("11가1111", "2022-04-30", "2022-05-01", "2022-05-08");
 
 		// 회원 정보 조회
 		String memberInfo = member.viewMemeber();
