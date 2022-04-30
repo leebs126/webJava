@@ -24,9 +24,9 @@ public class Reserve {
 		System.out.println("\n차 예약 정보를 조회합니다.");
 		System.out.println("-------------------------");
 		String resInfo = "예약차 번호 : " + resCarNumber
-		+"\n예약일자 : " + resDate
-		+"\n차사용시작일자 : " + useBeginDate
-		+"\n차반납예정일자 : " + useEndDate; 
+						+"\n예약일자 : " + resDate
+						+"\n차사용시작일자 : " + useBeginDate
+						+"\n차반납예정일자 : " + useEndDate; 
 		return resInfo;
 	}
 	

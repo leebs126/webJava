@@ -26,7 +26,12 @@ public class Member {
 	public String viewMember() {
 		System.out.println("\n회원 정보를 조회합니다.");
 		System.out.println("-------------------------");
-		String memberInfo = "아이디: " + id + "\n비밀번호 : " + password + "\n이름: " + name + "\n주소 : " + address + "\n전화번호 : "
+		String memberInfo = "아이디: " + id 
+				           + "\n비밀번호 : " 
+				           + password + "\n이름: " 
+				           + name + "\n주소 : " 
+				           + address 
+				           + "\n전화번호 : "
 				+ phoneNum;
 		return memberInfo;
 	}

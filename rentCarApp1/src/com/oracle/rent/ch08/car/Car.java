@@ -26,10 +26,10 @@ public class Car {
 		System.out.println("\n렌트카 정보를 조회합니다.");
 		System.out.println("-------------------------");
 		String carInfo = "차번호 : " + carNumber 
-		+"\n차이름 : " + carName
-		+"\n차색상: " + carColor 
-		+"\n차크기 : " + carSize +"cc"
-		+"\n차제조사: " + carMaker;
+						+"\n차이름 : " + carName
+						+"\n차색상: " + carColor 
+						+"\n차크기 : " + carSize +"cc"
+						+"\n차제조사: " + carMaker;
 		return carInfo;
 
 	}
