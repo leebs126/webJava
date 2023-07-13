@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<company>
+	<emp>
+		<firstname>현진</firstname>
+		<lastname>류</lastname>
+		<nickname>날쎈돌이</nickname>
+		<salary>1000000</salary>
+		<car size="1800">아반테</car>
+	</emp>
+	
+	<emp>
+		<firstname>길동</firstname>
+		<lastname>홍</lastname>
+		<nickname>칼치</nickname>
+		<salary>2000000</salary>
+		<car size="2000">소나타</car>
+	</emp>
+</company>
