@@ -10,7 +10,8 @@ public class Ex07 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("소수의 순서를 입력하세요 : ");
-		int order = sc.nextInt();
+		String temp = sc.nextLine();
+		int order = Integer.parseInt(temp);
 
 		Ex07 m = new Ex07();
 		m.calcPrimeOrder(order);

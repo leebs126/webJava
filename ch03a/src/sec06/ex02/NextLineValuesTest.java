@@ -11,7 +11,7 @@ public class NextLineValuesTest {
 		name = sc.nextLine();
 		addr = sc.nextLine();
 		
-		System.out.println("이름은 " + name +", 주소는 " + addr);
+		System.out.println("이름: " + name +", 주소: " + addr);
 		sc.close();
 
 	}

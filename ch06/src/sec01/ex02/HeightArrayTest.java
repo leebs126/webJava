@@ -10,8 +10,10 @@ public class HeightArrayTest {
 
 		double[] height = new double[5];
 		int studNum = 0;
+		String temp = null;
 		while (studNum < height.length) {
-			height[studNum] = sc.nextDouble();
+			temp = sc.nextLine();
+			height[studNum] = Double.parseDouble(temp);
 			studNum++;
 		}
 

@@ -5,13 +5,13 @@ public class StringComparatorTest {
 		String name1 = "홍길동";
 		String name2 = "홍길동";
 		
-		boolean isSameName = name1.equals(name2);
-		System.out.println(isSameName);
+		boolean sameName1 = name1.equals(name2);
+		System.out.println(sameName1);
 		
-		isSameName = name1.equals("홍길동");
-		System.out.println(isSameName);
+		boolean sameName2 = name1.equals("홍길동");
+		System.out.println(sameName2);
 		
-		isSameName = "홍길동".equals("이순신");
-		System.out.println(isSameName);
+		boolean sameName3 = "홍길동".equals("이순신");
+		System.out.println(sameName3);
 	}
 }

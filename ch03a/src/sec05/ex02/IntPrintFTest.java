@@ -3,6 +3,8 @@ package sec05.ex02;
 public class IntPrintFTest {
 
 	public static void main(String[] args) {
+//		System.out.printf("%-6.3f", 3.1415);
+		
 		int num1 = 543;
 		System.out.printf("%d\n", num1);
 		System.out.printf("num1의 값은 %d입니다.\n", num1);

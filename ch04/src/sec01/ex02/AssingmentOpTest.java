@@ -7,32 +7,32 @@ public class AssingmentOpTest {
 		int var1 = 4;
 		
 		sum += 4;  //sum = sum + 4;
-		System.out.println("sum = " + sum);
+		System.out.println("sum : " + sum);
 		
 		sum = 6;
 		sum *= 4;  //sum =sum * 4;
-		System.out.println("sum = " + sum);
+		System.out.println("sum : " + sum);
 		
 		sum = 6;
 		sum += var1; //sum = sum + var1;
-		System.out.println("sum = " + sum);
+		System.out.println("sum : " + sum);
 		
 		sum = 6;
 		sum -= var1; //sum = sum - var1;
-		System.out.println("sum = " + sum);
+		System.out.println("sum : " + sum);
 		
 		
 		sum = 6;
 		sum *= var1; //sum = sum * var1;
-		System.out.println("sum = " + sum);
+		System.out.println("sum : " + sum);
 		
 		sum = 6;
 		sum /= var1; //sum = sum / var1;
-		System.out.println("sum = " + sum);
+		System.out.println("sum : " + sum);
 		
 		sum = 6;
 		sum %= var1; //sum = sum % var1;
-		System.out.println("sum = " + sum);
+		System.out.println("sum : " + sum);
 		
 
 	}

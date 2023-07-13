@@ -34,7 +34,7 @@ public class IntTypeCastingTest {
 		System.out.println("iVar3 = " + iVar3);
 		
 		String str = "Hello";
-		int num1 = (int)str;
+//		int num1 = (int)str;
 		
 //		
 //		char cVar1 = 'A';

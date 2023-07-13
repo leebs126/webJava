@@ -6,12 +6,15 @@ public class MethodTest3 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("정수를 입력해 주세요 : ");
-		int num = sc.nextInt();
+		System.out.print("양의 정수를 입력해 주세요 : ");
+		String temp = sc.nextLine();
+		int num = Integer.parseInt(temp);
 		
 		MethodTest3 m = new MethodTest3();
 		int result = m.digitSum(num);
 		System.out.println(num + "의 자리수의 합 : " + result);
+		
+		System.out.println("종료");
 
 	}
 

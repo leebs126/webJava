@@ -12,6 +12,7 @@ public class ArrayAscSortingTest2 {
 			num[i] = rand;
 		}
 		
+		
 		System.out.println("정렬 전 배열값");
 		for (int i = 0; i < num.length; i++) {
 			System.out.print(num[i] + " ");

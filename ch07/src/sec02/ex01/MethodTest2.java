@@ -7,10 +7,12 @@ public class MethodTest2 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("두 정수를 입력하세요.");
 		System.out.print("시작 정수 : ");
-		int start = sc.nextInt();
+		String temp = sc.nextLine();
+		int start = Integer.parseInt(temp);
 		
 		System.out.print("마지막 정수 : ");
-		int end = sc.nextInt();
+		temp = sc.nextLine();
+		int end = Integer.parseInt(temp);
 		
 		MethodTest2 m = new MethodTest2();
 		m.sum(start, end);

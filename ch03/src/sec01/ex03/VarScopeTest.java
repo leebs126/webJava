@@ -9,7 +9,7 @@ public class VarScopeTest {
 		System.out.println("num1 = " + num1 + ", value1 = " + value1);
 	}
 	
-	System.out.println("num1 = " + num1 + ", value1 = " + value1);
+//	System.out.println("num1 = " + num1 + ", value1 = " + value1);
 
 }
 

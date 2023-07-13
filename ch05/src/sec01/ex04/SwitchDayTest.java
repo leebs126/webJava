@@ -7,7 +7,8 @@ public class SwitchDayTest {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("요일을 입력해주세요.");
-		int day = sc.nextInt();
+		String temp = sc.nextLine();
+		int day = Integer.parseInt(temp);
 
 //		switch(3.0);
 		switch (day) {
@@ -34,6 +35,7 @@ public class SwitchDayTest {
 			System.out.println("일요일입니다.");
 			break;
 		}
+		sc.close();
 	}
 
 }
