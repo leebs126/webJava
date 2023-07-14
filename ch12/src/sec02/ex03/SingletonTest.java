@@ -19,7 +19,7 @@ public class SingletonTest {
 		}
 		
 		System.out.println();
-		System.out.println("지구 반지름: " + Earth.earthRadius + "km");
+		System.out.println("지구 반지름: " + Earth.EARTH_RADIUS + "km");
 		
 		
 	}
