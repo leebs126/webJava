@@ -7,7 +7,9 @@ public class IfElseIfTest {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("시험 점수를 입력해 주세요.");
-		int score = sc.nextInt();
+		String temp = sc.nextLine();
+		int score = Integer.parseInt(temp);
+
 
 		if (score >= 90) {
 			System.out.println("90~100점입니다.");
