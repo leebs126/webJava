@@ -4,6 +4,11 @@ public class ConstantTest {
 
 	public static void main(String[] args) {
 		final int SAFE_SPEED = 60 ;
+		
+//		final int SAFE_SPEED;
+//		System.out.println(SAFE_SPEED);  //초기화 하지 않고 사용 시 에러가 발생합니다.
+//		SAFE_SPEED = 90;
+		
 		final int MAX_VALUE = 2147483647;
 		final int MIN_VALUE =-2147483648;
 		final String SERVER_IP_ADDRESS = "13.124.56.189";
