@@ -1,8 +1,8 @@
-package com.oracle.book.ch17.common;
+package com.oracle.book.ch22.common;
 
 import java.util.Calendar;
 
-public class Base {
+public class AbstractBase {
 	// 하위 클래스의 결과값을 출력하는 메소드
 	public void displayData(String data) {
 		System.out.println("조회한 데이터는 " + data + " 입니다.");
