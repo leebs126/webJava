@@ -1,6 +1,6 @@
 package sec01.ex02;
 
-public class ArraIndexOutOfBoundsExceptionTest {
+public class ArrayIndexOutOfBoundsExceptionTest {
 	public static void main(String[] args) {
 		int[] num = new int[3];
 		num[0] = 1;
