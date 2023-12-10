@@ -6,12 +6,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/java/workspace_webjava/oracle_module/ext/oracle_module.jar">
+	<classpathentry kind="lib" path="C:/java/workspace_webjava/mysql_module/ext/mysql_module.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/java/workspace_webjava/mysql_module/ext/mysql_module.jar">
+	<classpathentry kind="lib" path="C:/java/workspace_webjava/oracle_module/ext/oracle_module.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
