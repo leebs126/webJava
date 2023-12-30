@@ -14,7 +14,7 @@ public class MyMathTest {
 		
 		int radius = 10;
 		double result2 = MyMath.pi * radius * radius;
-		System.out.println("원이 넓이 : " + result1);
+		System.out.println("원이 넓이 : " + result2);
 		System.out.println();
 		
 		result2 = Math.PI * radius * radius;
