@@ -1,6 +1,6 @@
 package sec01.ex01;
 
-public class VarInitTest1a2 {
+public class VarUseTest1 {
 
 	public static void main(String[] args) {
 		int num1 = 12;
