@@ -1,6 +1,6 @@
 package sec01.ex02;
 
-public class StringVarTest2 {
+public class MultiStringVarTest {
 
 	public static void main(String[] args) {
 		String name, address, major;

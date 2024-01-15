@@ -1,6 +1,6 @@
 package sec01.ex01;
 
-public class VarInitTest2 {
+public class MultiVarInitTest {
 
 	public static void main(String[] args) {
 		int num1, num2, num3;
