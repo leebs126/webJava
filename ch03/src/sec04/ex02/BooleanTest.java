@@ -17,6 +17,10 @@ public class BooleanTest {
 		}else {
 			System.out.println("거짓입니다.");
 		}
+		
+		boolean b2 = false;
+		b2 = Boolean.parseBoolean("true");
+		System.out.println("b2 = " + b2);
 
 	}
 
