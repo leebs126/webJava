@@ -13,5 +13,6 @@ public class CharInputTest {
 		grade = temp.toUpperCase().charAt(0);
 		
 		System.out.println("학점은 " + grade);
+		sc.close();
 	}
 }
