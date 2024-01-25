@@ -9,11 +9,11 @@ public class IntPrintfTest {
 		System.out.printf("%10d\n", num1);
 		System.out.printf("%-10d\n", num1);
 		System.out.printf("%010d\n", num1);
-		System.out.println();
-		System.out.printf("%o\n", num1);
-		System.out.printf("%x\n", num1);
-		System.out.printf("%X\n", num1);
-		System.out.printf("%%d =%d 출력", 500);
+//		System.out.println();
+//		System.out.printf("%o\n", num1);
+//		System.out.printf("%x\n", num1);
+//		System.out.printf("%X\n", num1);
+//		System.out.printf("%%d =%d 출력", 500);
 
 	}
 
