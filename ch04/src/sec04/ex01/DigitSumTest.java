@@ -8,7 +8,8 @@ public class DigitSumTest {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("세 자리의 정수를 입력하세요.");
 		
-		int num1 = sc.nextInt();
+		String temp1 = sc.nextLine();
+		int num1 = Integer.parseInt(temp1);
 		int total = num1 / 100;
 		
 		num1 %= 100;

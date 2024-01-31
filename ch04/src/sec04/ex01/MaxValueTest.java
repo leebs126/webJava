@@ -8,8 +8,10 @@ public class MaxValueTest {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("두 수를 입력하세요.");
-		int num1 = sc.nextInt();
-		int num2 = sc.nextInt();
+		String temp1 = sc.nextLine();
+		int num1 = Integer.parseInt(temp1);
+		String temp2 = sc.nextLine();
+		int num2 = Integer.parseInt(temp2);
 		
 		int result = (num1 > num2) ? num1 : num2;
 		

@@ -8,7 +8,8 @@ public class OddEvenTest {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("정수를 입력하세요.");
-		int num1 = sc.nextInt();
+		String temp1 = sc.nextLine();
+		int num1 = Integer.parseInt(temp1);
 		
 		String result = ((num1 % 2) == 0) ? "짝수" : "홀수";
 		
