@@ -4,6 +4,11 @@ public class IfTest {
 
 	public static void main(String[] args) {
 		int score = 65;
+		
+//		if (score = 60) {
+		if (score == 65) {
+			System.out.println("65점입니다.");
+		}
 
 		if (score >= 60) {
 			System.out.println("60점보다 큽니다.");
