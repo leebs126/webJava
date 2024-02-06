@@ -10,7 +10,7 @@ public class NestedIfTest {
 		String temp = sc.nextLine();
 		int score = Integer.parseInt(temp);
 
-		if ((score >= 0) && (score <= 100)) {
+		if ((0<= score) && (score <= 100)) {
 
 			if (score >= 90) {
 				System.out.println("90~100점입니다.");
