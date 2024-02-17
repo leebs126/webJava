@@ -15,7 +15,8 @@ public class WhileBreakTest {
 	         System.out.println("1:회원, 2:렌터카, 3:예약, 4:종료 ");
 	         System.out.println("---------------------------------------");
 	         System.out.print("메뉴 번호 선택:");
-	         num = sc.nextInt();
+	         String temp = sc.nextLine();
+	         num = Integer.parseInt(temp);
 	   
 	         if(num == 1) {
 	            System.out.println("1.회원 메뉴를 선택하셨습니다.");
