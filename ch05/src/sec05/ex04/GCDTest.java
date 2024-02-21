@@ -11,11 +11,13 @@ public class GCDTest {
 		int gcd = 1; // 최대 공약수(great common divisor)
 
 		System.out.println("두 자연수를 입력해 주세요.");
-		System.out.print("num1=");
-		num1 = sc.nextInt();
-
-		System.out.print("num2=");
-		num2 = sc.nextInt();
+		System.out.print("num1= ");
+		String temp1 = sc.nextLine();
+		num1 = Integer.parseInt(temp1);
+		
+		System.out.print("num2= ");
+		String temp2 = sc.nextLine();
+		num2 = Integer.parseInt(temp2);
 
 		for (int i = 1; i <= num1; i++) {
 			if (num1 % i == 0 && num2 % i == 0) {
