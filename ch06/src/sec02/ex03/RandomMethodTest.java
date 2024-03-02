@@ -3,6 +3,7 @@ package sec02.ex03;
 public class RandomMethodTest {
 
 	public static void main(String[] args) {
+//		System.out.println(Math.random());  //0에서 1사이의 실수를 리턴합니다.
 		
 		int rand = (int)(Math.random() * 100* 9) %  10 + 1;  //1 ~ 10
 		System.out.println("양의 정수 : " + rand);
@@ -12,24 +13,6 @@ public class RandomMethodTest {
 		System.out.println("양의 정수 : " + rand);
 		
 		
-//		int rand = (int)(Math.random() * (10 - 1 + 1)) + 1;  //1 ~ 10
-//		System.out.println("양의 정수 : " + rand);
-		
-		
-//		int rand = (int)(Math.random() * 1000) %  9 + 1;
-//		System.out.println("양의 정수 : " + rand);
-//		
-//		rand = (int)(Math.random() * 1000) % 100 + 100;
-//		System.out.println("양의 정수 : " + rand);
-//				
-		
-//		System.out.println(Math.random());
-		
-//		int rand = (int) (Math.random() * 100) + 1;
-//		System.out.println("양의 정수 : " + rand);
-//		
-//		rand = (int)(Math.random() * 200 ) + 20;
-//		System.out.println("양의 정수 : " + rand);
 
 	}
 
