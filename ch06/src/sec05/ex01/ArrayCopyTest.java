@@ -11,7 +11,7 @@ public class ArrayCopyTest {
 			dest1[i] = src[i];
 		}
 
-		for (int i = 0; i < src.length; i++) {
+		for (int i = 0; i < dest1.length; i++) {
 			System.out.print(dest1[i] + " ");
 		}
 		System.out.println();
