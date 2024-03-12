@@ -12,8 +12,8 @@ public class MethodParameterTest1 {
 		m.print(a + 10);
 //		m.print(3.15);
 		
-		m.printString("Hello!");
-		m.printString(str);
+		m.printResult("Hello!");
+		m.printResult(str);
 		
 		System.out.println("\n종료");
 
@@ -23,8 +23,8 @@ public class MethodParameterTest1 {
 		System.out.println("전달된 값 : " + x);
 	}
 	
-	public void printString(String msg) {
-		System.out.println(msg);
+	public void printResult(String result) {
+		System.out.println(result);
 	}
 
 }
