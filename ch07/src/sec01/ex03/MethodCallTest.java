@@ -1,11 +1,11 @@
 package sec01.ex03;
 
-public class MethodInMethodTest {
+public class MethodCallTest {
 	public static void main(String[] args) {
 		int[] score1 = { 30, 40, 50, 60, 60 };
 		int[] score2 = { 33, 44, 55, 66, 77 };
 		int sum = 0, max = 0;
-		MethodInMethodTest m = new MethodInMethodTest();
+		MethodCallTest m = new MethodCallTest();
 		sum = m.arraySum(score1);
 		max = m.arrayMax(score1);
 
