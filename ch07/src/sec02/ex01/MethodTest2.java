@@ -23,7 +23,7 @@ public class MethodTest2 {
 	
 	public void sumBetweenIntegers(int start, int end) {
 		//1. 지역 변수 선언
-		int sum = 0;
+		int total = 0;
 		
 		//2. 기능 구현
 		if(start > end) {
@@ -33,12 +33,12 @@ public class MethodTest2 {
 		}
 		
 		for (int i = start; i <= end; i++) {
-			sum += i;
+			total += i;
 		}
 		
 		//3. 결과 출력또는 반환
 		System.out.println("--------------결과 출력----------------");
-		System.out.println(start+" 와 " + end +" 사이의 정수들의 합 : " + sum);
+		System.out.println(start+" 와 " + end +" 사이의 정수들의 합 : " + total);
 	}
 
 }
