@@ -15,13 +15,13 @@ public class MethodTest2 {
 		int end = Integer.parseInt(temp);
 		
 		MethodTest2 m = new MethodTest2();
-		m.sum(start, end);
+		m.sumBetweenIntegers(start, end);
 		
 		System.out.println("종료");
 
 	}
 	
-	public void sum(int start, int end) {
+	public void sumBetweenIntegers(int start, int end) {
 		//1. 지역 변수 선언
 		int sum = 0;
 		
