@@ -6,9 +6,9 @@ public class MethodTest4 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-				
-		System.out.print("양의 정수를 입력해주세요 : ");
-		int num = sc.nextInt();
+		System.out.println("양의 정수를 입력해주세요.");
+		String temp = sc.nextLine();
+		int num = Integer.parseInt(temp);
 
 		MethodTest4 m = new MethodTest4();
 		m.findPrime(num);
