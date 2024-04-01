@@ -1,6 +1,6 @@
 package sec05.ex01;
 
-public class StudentTest {
+public class NullPointerTest {
 
 	public static void main(String[] args) {
 		String str1 = null; //참조 변수에 어떤 인스턴스도 지정되지 않았습니다.
