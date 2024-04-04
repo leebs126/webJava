@@ -1,11 +1,11 @@
 package com.oracle.rent.ch08.car;
 
 public class Car {
-	String carNumber;
-	String carName;
-	String carColor;
-	int carSize;
-	String carMaker;
+	String carNumber;   //차 번호
+	String carName;	    //차 이름
+	String carColor;	//차 색상
+	int carSize;        //차 배기량
+	String carMaker;	//차 제조사 
 
 	public Car() {
 		

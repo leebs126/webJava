@@ -1,11 +1,11 @@
 package com.oracle.rent.ch08.member;
 
 public class Member {
-	String id;
-	String password;
-	String name;
-	String address;
-	String phoneNum;
+	String id;  		 //아이디
+	String password;  	 //비밀번호
+	String name;         //이름
+	String address;		 //주소
+	String phoneNum;	 //전화번호
 	
 	public Member() {
 		

@@ -1,11 +1,11 @@
 package com.oracle.rent.ch08.res;
 
 public class Reserve {
-	String resNumber;
-	String resCarNumber;
-	String resDate;
-	String useBeginDate;
-	String useEndDate;
+	String resNumber;    //예약 번호
+	String resCarNumber; //예약 차번호 
+	String resDate;      //예약 날자
+	String useBeginDate; //차 사용 시작일자
+	String useEndDate;   //차 반납 예정일자
 	
 	public Reserve() {
 		
