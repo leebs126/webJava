@@ -1,4 +1,4 @@
-package sec03.ex02;
+package sec03.ex03;
 
 public class SyncTest4 {
 	Object  objKey = new Object();  

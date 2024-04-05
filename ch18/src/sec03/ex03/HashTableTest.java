@@ -1,4 +1,4 @@
-package sec03.ex02;
+package sec03.ex03;
 
 import java.util.Hashtable;
 import java.util.Map;
