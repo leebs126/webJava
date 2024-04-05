@@ -1,6 +1,6 @@
 package sec01.ex02;
 
-public class EqualsTest {
+public class StringEqualsTest {
 
 	public static void main(String[] args) {
 		
