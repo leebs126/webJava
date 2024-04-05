@@ -2,7 +2,7 @@ package sec01.ex01;
 
 import java.io.FileInputStream;
 
-public class CheckedExceptioTest {
+public class CheckedExceptionTest {
 
 	public static void main(String[] args) {
 //		Class class1 = Class.forName("java.lang.String");  //ClassNotFoundException 발생
