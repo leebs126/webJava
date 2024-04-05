@@ -6,7 +6,7 @@ public class College extends Student {
 	public College() {
 		this("이순신", 2, 20);
 		System.out.println("College 클래스의 기본 생성자 호출");
-//		this("이순신", 2, 20); //반드시 첫 줄 작성해야 합니다.
+//		this("이순신", 2, 20); //반드시 첫 줄에 작성해야 합니다.
 		
 	}
 	public College(String name, int grade, int courses) {
