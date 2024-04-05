@@ -1,4 +1,4 @@
-package sec03.ex03;
+package sec03.ex02;
 
 import java.util.List;
 import java.util.Vector;

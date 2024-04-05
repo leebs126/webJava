@@ -1,6 +1,6 @@
 package sec01.ex04;
 
-public class ThreadMethodTest1 {
+public class ThreadMethodTest {
 
 	public static void main(String[] args) {
 		Thread curThread = Thread.currentThread();

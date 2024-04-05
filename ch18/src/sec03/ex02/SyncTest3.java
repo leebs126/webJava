@@ -1,6 +1,6 @@
-package sec03.ex03;
+package sec03.ex02;
 
-public class SyncTest2 {
+public class SyncTest3 {
 	Thread t1 = new Thread("thread1") {
 		public void run() {
 			method1();
@@ -39,29 +39,32 @@ public class SyncTest2 {
 		try {
 			Thread.sleep(100);
 		} catch (InterruptedException e) {}
-		
 		System.out.println("실행 스레드: " + Thread.currentThread().getName());
 		System.out.println("thread1: " + t1.getState());
 		System.out.println("thread2: " + t2.getState());
 		System.out.println("thread3: " + t3.getState());
 
-		for (long j = 0; j < 100000000000L; j++) {}	}
+		for (long j = 0; j < 100000000000L; j++) {}	
+	}
 
 	public void method3() {
-		System.out.println("\n method3() 메소드");
-		try {
-			Thread.sleep(100);
-		} catch (InterruptedException e) {
-		}
-
-		System.out.println("실행 스레드: " + Thread.currentThread().getName());
-		System.out.println("thread1: " + t1.getState());
-		System.out.println("thread2: " + t2.getState());
-		System.out.println("thread3: " + t3.getState());
+		System.out.println("\n method3() 메소드의 동기화 블럭 외부");
+		System.out.println(Thread.currentThread().getName() + ": " + t3.getState());
 		
-		for (long i = 0; i < 10000000L; i++) {
-			for (long j = 0; j < 100000000000L; j++) {
+		synchronized(this) {
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
 			}
+	
+			System.out.println("\n method3() 메소드의 동기화 블럭 내부");
+			
+			System.out.println("실행 스레드: " + Thread.currentThread().getName());
+			System.out.println("thread1: " + t1.getState());
+			System.out.println("thread2: " + t2.getState());
+			System.out.println("thread3: " + t3.getState());
+			
+			for (long j = 0; j < 100000000000L; j++) {}
 		}
 	}
 
@@ -74,7 +77,7 @@ public class SyncTest2 {
 	}
 
 	public static void main(String[] args) {
-		SyncTest2 st = new SyncTest2();
+		SyncTest3 st = new SyncTest3();
 		st.startAll();
 	}
 
