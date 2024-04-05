@@ -1,4 +1,4 @@
-package sec04.ex07;
+package sec04.ex08;
 
 public class Horse extends Thread {
 	@Override

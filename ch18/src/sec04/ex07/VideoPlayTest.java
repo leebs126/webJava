@@ -1,4 +1,4 @@
-package sec04.ex08;
+package sec04.ex07;
 
 public class VideoPlayTest {
 	public static void main(String[] args) {
