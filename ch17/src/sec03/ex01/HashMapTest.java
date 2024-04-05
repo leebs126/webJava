@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class HashCodeTest {
+public class HashMapTest {
 	public static void main(String[] args) {
 		Map scoreMap = new HashMap();
 		scoreMap.put("이순신", 90);
