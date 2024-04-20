@@ -9,7 +9,7 @@ public class Temp extends Employee {
 	}
 
 	@Override
-	int calcTotalPay() {
+	public int calcTotalPay() {
 		// 상위 메서드를 호출하여 총 급여를 구한다.
 		// int totalPay=12*payPerMonth+ commsion+ workedHour*2000;
 		int temp = super.calcTotalPay();

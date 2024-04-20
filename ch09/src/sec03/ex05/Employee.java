@@ -12,7 +12,7 @@ public class Employee {
 	}
 
 	// 정규직 총 급여 구하기
-	int calcTotalPay() {
+	public int calcTotalPay() {
 		int totalPay = 12 * payPerMonth + commision;
 		return totalPay;
 	}
