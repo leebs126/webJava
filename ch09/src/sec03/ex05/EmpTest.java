@@ -7,6 +7,7 @@ public class EmpTest {
 		int totalPay;
 		Regular lee;
 		Temp hong;
+		
 		lee = new Regular("이순신", 2000000, 5000000);
 		hong = new Temp("홍길동", 1500000, 0, 500);
 		
