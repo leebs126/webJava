@@ -5,7 +5,8 @@ public class EmpTest {
 	public static void main(String[] args) {
 		String name;
 		int totalPay;
-		Employee hong, lee;
+		Regular lee;
+		Temp hong;
 		lee = new Regular("이순신", 2000000, 5000000);
 		hong = new Temp("홍길동", 1500000, 0, 500);
 		
