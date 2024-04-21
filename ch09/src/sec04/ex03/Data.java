@@ -1,7 +1,7 @@
 package sec04.ex03;
 
 public class Data {
-	public int x , y;
+	public int x ,y;
 	public int value;
 	
 	public Data(int x, int y) {
