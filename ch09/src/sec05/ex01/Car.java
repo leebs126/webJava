@@ -23,6 +23,11 @@ public class Car {
 	public void stop() {
 		velocity = 0;
 	}
+	
+	public void park() {
+		System.out.println("차를 주차합니다.");
+		velocity = 0;
+	}
 
 	//차 정보를 출력하는 메소드
 	public String getCarInfo() {
