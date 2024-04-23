@@ -2,7 +2,7 @@ package sec05.ex01;
 
 public class Bus extends Car {
 	private int passenger; // 버스 승객 수
-	private int fee;
+	private int fee;        //버스 요금
 
 	// 생성자
 	public Bus(String carName, String carNumber, String carColor, int carSize, int velocity, int passenger, int fee) {
