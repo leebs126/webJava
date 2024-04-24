@@ -19,7 +19,7 @@ public class RentCarApp {
 
 		// 회원 정보 조회
 		String memberInfo = member.viewMemeber();
-		car.displayData(memberInfo);
+		member.displayData(memberInfo);
 		
 
 		// 렌트카 정보 조회
@@ -29,7 +29,7 @@ public class RentCarApp {
 
 		// 예약 정보 조회
 		String resInfo = reserve.checkResInfo();
-		car.displayData(resInfo);
+		reserve.displayData(resInfo);
 
 		
 		//회원, 차, 예약 정보 수정
