@@ -14,8 +14,8 @@ public class Reserve extends AbstractBase{
 	}
 	
 	
-	public Reserve(String _resNumber, String resCarNumber, String resDate, String useBeginDate, String useEndDate) {
-		this.resNumber = _resNumber;
+	public Reserve(String resNumber, String resCarNumber, String resDate, String useBeginDate, String useEndDate) {
+		this.resNumber = resNumber;
 		this.resCarNumber = resCarNumber;
 		this.resDate = resDate;
 		this.useBeginDate = useBeginDate;
@@ -40,10 +40,10 @@ public class Reserve extends AbstractBase{
 	}
 	
 	// 차 예약 기능
-	public void resCar(String _resNumber, String resCarNumber, String resDate, String useBeginDate, String useEndDate) {
+	public void resCar(String resNumber, String resCarNumber, String resDate, String useBeginDate, String useEndDate) {
 		System.out.println("\n렌터카를 예약합니다.");
 	    System.out.println("렌트카 예약 시간 :"+showTime());
-	    this.resNumber = _resNumber;
+	    this.resNumber = resNumber;
 		this.resCarNumber = resCarNumber;
 		this.resDate = resDate;
 		this.useBeginDate = useBeginDate;
