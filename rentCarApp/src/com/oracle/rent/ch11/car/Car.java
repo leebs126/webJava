@@ -3,11 +3,11 @@ package com.oracle.rent.ch11.car;
 import com.oracle.rent.ch11.common.AbstractBase;
 
 public class Car extends AbstractBase{
-	String carNumber;
-	String carName;
-	String carColor;
-	int carSize;
-	String carMaker;
+	private String carNumber;
+	private String carName;
+	private String carColor;
+	private int carSize;
+	private String carMaker;
 
 	public Car() {
 		

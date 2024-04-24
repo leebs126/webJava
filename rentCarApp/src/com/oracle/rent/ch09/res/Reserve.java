@@ -3,11 +3,11 @@ package com.oracle.rent.ch09.res;
 import com.oracle.rent.ch09.common.Base;
 
 public class Reserve extends Base{
-	String resNumber;
-	String resCarNumber;
-	String resDate;
-	String useBeginDate;
-	String useEndDate;
+	private String resNumber;
+	private String resCarNumber;
+	private String resDate;
+	private String useBeginDate;
+	private String useEndDate;
 	
 	public Reserve() {
 		

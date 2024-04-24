@@ -3,11 +3,11 @@ package com.oracle.rent.ch09.member;
 import com.oracle.rent.ch09.common.Base;
 
 public class Member extends Base {
-	String id;
-	String password;
-	String name;
-	String address;
-	String phoneNum;
+	private String id;
+	private String password;
+	private String name;
+	private String address;
+	private String phoneNum;
 
 	public Member() {
 

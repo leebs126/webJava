@@ -3,11 +3,11 @@ package com.oracle.rent.ch11.res;
 import com.oracle.rent.ch11.common.AbstractBase;
 
 public class Reserve extends AbstractBase{
-	String resNumber;
-	String resCarNumber;
-	String resDate;
-	String useBeginDate;
-	String useEndDate;
+	private String resNumber;
+	private String resCarNumber;
+	private String resDate;
+	private String useBeginDate;
+	private String useEndDate;
 	
 	public Reserve() {
 		
