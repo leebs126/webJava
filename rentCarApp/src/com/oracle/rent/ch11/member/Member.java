@@ -3,11 +3,11 @@ package com.oracle.rent.ch11.member;
 import com.oracle.rent.ch11.common.AbstractBase;
 
 public class Member extends AbstractBase {
-	private String id;
-	private String password;
-	private String name;
-	private String address;
-	private String phoneNum;
+	private String id;          //아이디
+	private String password;     //비밀번호
+	private String name;        //이름
+	private String address;     //주소
+	private String phoneNum;    //전화번호
 
 	public Member() {
 
