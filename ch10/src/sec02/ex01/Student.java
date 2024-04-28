@@ -32,11 +32,7 @@ public class Student {
 
 
 	public void calcScore(Student s) {
-		if(s instanceof College) {
-			System.out.println("대학생 시험 점수입니다.");
-		}else if(s instanceof Middle) {
-			System.out.println("중학생 시험 점수입니다.");
-		}
+		System.out.println("학생 시험 점수 구하기");
 	}
 
 	// 학생 신상 정보 출력 메소드
