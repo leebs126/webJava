@@ -2,6 +2,7 @@ package sec03.ex01;
 
 public class College extends Student {
 	private int courses;
+	private char credit;   //학점
 
 	public College() {
 		this("이순신", 2, 20 );
@@ -15,6 +16,15 @@ public class College extends Student {
 		super.name = name;
 		super.grade = grade;
 		this.courses = courses;
+	}
+	
+	public College(String name, int grade, int courses, char credit) {
+		super();
+		System.out.println("매개변수가 4개인 College 생성자 호출");
+		super.name = name;
+		super.grade = grade;
+		this.courses = courses;
+		this.credit = credit;
 	}
 	
 	public College(String name, int grade, int courses, String gender, int age ) {
@@ -31,6 +41,10 @@ public class College extends Student {
 
 	public int getCourses() {
 		return courses;
+	}
+	
+	public char getCredit() {
+		return credit;
 	}
 
 	@Override

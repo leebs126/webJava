@@ -6,6 +6,8 @@ import java.util.List;
 public class ArrayListTest {
 
 	public static void main(String[] args) {
+		
+//		ArrayList arrayList = new ArrayList();
 		List aList = new ArrayList();
 
 		// #1. 객체 저장하기
