@@ -9,15 +9,15 @@ public class StudentTest {
 		Person p2 = new College("홍길동", 3, 22, "남", 22);
 		
 		System.out.println();
-		sinsang = ((Student) p1).getStudInfo();
+		sinsang = ((Student)p1).getStudInfo();
 		System.out.println("학생정보: " + sinsang);
 		
 		System.out.println();
-		sinsang = ((Student) p2).getStudInfo();
+		sinsang = ((Student)p2).getStudInfo();
 		System.out.println("학생정보: " + sinsang);
 		
 		System.out.println();
-		sinsang = ((College) p2).getStudInfo();
+		sinsang = ((College)p2).getStudInfo();
 		System.out.println("학생정보: " + sinsang);
 		
 	}
