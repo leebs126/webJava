@@ -24,6 +24,7 @@ public class College extends Student {
 		return courses;
 	}
 
+	@Override
 	public String getStudInfo() {
 		System.out.println("College 클래스의 getStudInfo() 메서드 호출");
 		return "이름은>> " + name + ", 학년은>> " + grade + ", 신청 학점은>> " + courses;
