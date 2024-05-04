@@ -4,6 +4,11 @@ public class Number {
 	private int num;
 	static int numCounter = 10;
 
+	//생성자
+	public Number() {
+		num = numCounter;
+	}
+
 	public static int getNumCounter() {
 		return numCounter;
 	}
@@ -20,11 +25,8 @@ public class Number {
 //	}
 
 
-	public Number() {
-		num = numCounter;
-	}
 
-	public void incNum() {
+	public void increaseNum() {
 		numCounter++;
 	}
 
