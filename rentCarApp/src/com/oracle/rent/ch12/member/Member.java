@@ -8,7 +8,6 @@ public class Member extends AbstractBase {
 	
 	// 기존 회원 정보 조회
 		public String viewMember(MemberVO vo) {
-			DataUtil.decodeData(memberData);
 			memberData="회원 아이디:" + vo.id+","+
 			     	"\n회원 비번:" + vo.password+","+
 			     	"\n회원 이름:" + vo.name+","+
@@ -17,6 +16,7 @@ public class Member extends AbstractBase {
 			System.out.println("회원 정보를 조회합니다.");
 			System.out.println("회원 조회시간: " + showTime());
 			
+			DataUtil.decodeData(memberData);			
 			return memberData;
 		}
 		
