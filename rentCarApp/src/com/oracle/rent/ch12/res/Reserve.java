@@ -16,7 +16,7 @@ public class Reserve extends AbstractBase{
 		DataUtil.decodeData(resData);
 		
 		System.out.println("\n차 예약 정보를 조회합니다.");
-	      System.out.println("렌트카 정보 조회 시간 :"+showTime());   
+	    System.out.println("렌트카 정보 조회 시간 :"+showTime());   
 		System.out.println("-------------------------");
 		
 		
@@ -46,10 +46,10 @@ public class Reserve extends AbstractBase{
 		
 		resData="예약 번호: " + vo.resNumber +", " + 
 				"\n예약 차번호: " + vo.resCarNumber+","+
-				 "\n예약 날자: " + vo.resDate+","+
-				 "\n이용 시작 일자: " + vo.useBeginDate+","+
-				 "\n차 반납 일자: " + vo.returnDate;
-			DataUtil.encodeData(resData);
+				"\n예약 날자: " + vo.resDate+","+
+				"\n이용 시작 일자: " + vo.useBeginDate+","+
+				"\n차 반납 일자: " + vo.returnDate;
+		DataUtil.encodeData(resData);
 	}
 
 	// 차 예약 정보 취소 기능
@@ -59,10 +59,10 @@ public class Reserve extends AbstractBase{
 		
 		resData="예약 번호: " + vo.resNumber +", " + 
 				"\n예약 차번호: " + vo.resCarNumber+","+
-				 "\n예약 날자: " + vo.resDate+","+
-				 "\n이용 시작 일자: " + vo.useBeginDate+","+
-				 "\n차 반납 일자: " + vo.returnDate;
-			DataUtil.decodeData(resData);
+				"\n예약 날자: " + vo.resDate+","+
+				"\n이용 시작 일자: " + vo.useBeginDate+","+
+				"\n차 반납 일자: " + vo.returnDate;
+		DataUtil.decodeData(resData);
 	}
 
 }
