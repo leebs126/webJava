@@ -4,7 +4,7 @@ public class ImplA implements InterfaceA {
 
 	@Override
 	public void method1() {
-		System.out.println("method1() 메소드입니다.");
+		System.out.println("method1() 메서드입니다.");
 	}
 
 }
