@@ -17,6 +17,7 @@ public class Outter {
 		return age;
 	}
 
+	//정적 내부 클래스
 	 static class Inner {
 			private String address;
 			static String tel;
