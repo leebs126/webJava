@@ -5,7 +5,7 @@ public class IntterTest {
 
 	public static void main(String[] args) {
 		Outter.Inner.tel = "010-1111-2222";
-//		Outter.Inner.address= "010-1111-2222";
+//		Outter.Inner.address= "서울시 강남구";
 		String tel = Outter.Inner.getTel();
 		System.out.println("전화번호: " +  tel);
 		System.out.println();
