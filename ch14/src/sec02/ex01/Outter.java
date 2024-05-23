@@ -1,9 +1,10 @@
 package sec02.ex01;
 
 public class Outter {
-	
+	//메서드
 	public void startChat() {
-		class ChattingThread  {
+		//로컬 내부 클래스
+		class ChattingThread {
 			public void SendData() {
 				System.out.println("메시지를 송신합니다.");
 			}
