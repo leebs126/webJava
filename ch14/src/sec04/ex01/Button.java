@@ -11,6 +11,7 @@ public class Button {
 		listener.btnClicked(btnName);
 	}
 	
+	//내부 인터페이스
 	static interface ButtonEventListener{
 		public void btnClicked(String btnName);
 	}

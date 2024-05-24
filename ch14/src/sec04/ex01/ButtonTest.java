@@ -7,7 +7,5 @@ public class ButtonTest {
 		
 		button.btnClicked("등록하기");
 		button.btnClicked("수정하기");
-
 	}
-
 }
