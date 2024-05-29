@@ -8,8 +8,9 @@ public class IntegerTest {
 		String num1 = "98";
 		String num2 = num1 + 2;
 		System.out.println("num2 = " + num2);
+		
 		int num3 = Integer.parseInt(num1) + 2;
-//		int num3 = Integer.parseInt ( "hello" ) + 2;  //NumberFormatExcepton 예외 발생
+//		int num3 = Integer.parseInt ("hello") + 2;  //NumberFormatExcepton 예외 발생
 		System.out.println("num3 = " + num3);
 
 		System.out.println("2진수로 변환하기");
