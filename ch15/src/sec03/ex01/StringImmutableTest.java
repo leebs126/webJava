@@ -15,12 +15,15 @@ public class StringImmutableTest {
 		System.out.println("b = " + b);
 		System.out.println();
 		
+		//문자열 변수
 		System.out.println("name = " + name);
 		name = "홍"+"길동";
 		System.out.println("name = " + name);
+		System.out.println();
 		
-		String fullName = name.concat(" 안녕");
-		System.out.println("fullName = " + fullName);
+		String result = name.concat(" 안녕");
+		System.out.println("name = " + name);
+		System.out.println("result = " + result);
 	}
 
 }
