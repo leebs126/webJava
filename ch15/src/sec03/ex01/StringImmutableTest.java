@@ -17,6 +17,7 @@ public class StringImmutableTest {
 		
 		//문자열 변수
 		System.out.println("name = " + name);
+		
 		name = "홍"+"길동";
 		System.out.println("name = " + name);
 		System.out.println();
