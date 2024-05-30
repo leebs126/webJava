@@ -24,14 +24,14 @@ public class StringMethodTest {
 
 		// 문자열과 문자열을 결합합니다.
 		System.out.println(str.concat(" and Java!!"));
-		System.out.println(str + "  and Java!");
-
-		// 문자열을 대문자로 변환합니다.
-		System.out.println(str.toLowerCase());
-		System.out.println("Hello World".toUpperCase());
-		System.out.println();
+		System.out.println(str + " and Java!");
 
 		// 문자열을 소문자로 변환합니다.
+		System.out.println(str.toLowerCase());
+		System.out.println("Hello World".toLowerCase());
+		System.out.println();
+
+		// 문자열을 대문자로 변환합니다.
 		System.out.println(str.toUpperCase());
 
 		// 문자열에서 문자 "World"를 "Java"로 대체합니다.
