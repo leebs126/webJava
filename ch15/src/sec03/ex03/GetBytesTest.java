@@ -26,7 +26,6 @@ public class GetBytesTest {
 			e.printStackTrace();
 		}
 		
-//		System.out.println(decodeName);
 
 	}
 
