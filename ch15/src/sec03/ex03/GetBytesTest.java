@@ -9,7 +9,7 @@ public class GetBytesTest {
 		byte[] encodeBytes = {};
 		
 		try {
-			encodeBytes = name.getBytes("utf-8");
+			encodeBytes = name.getBytes("UTF-8");
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
