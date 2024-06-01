@@ -6,7 +6,7 @@ public class GetBytesTest {
 
 	public static void main(String[] args) {
 		String name = "이순신";
-		byte[] encodeBytes = {};
+		byte[] encodeBytes = null;
 		
 		try {
 			encodeBytes = name.getBytes("UTF-8");
@@ -28,3 +28,4 @@ public class GetBytesTest {
 	}
 
 }
+
