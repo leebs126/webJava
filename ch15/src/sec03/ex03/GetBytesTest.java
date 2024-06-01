@@ -5,11 +5,11 @@ import java.io.UnsupportedEncodingException;
 public class GetBytesTest {
 
 	public static void main(String[] args) {
-		String name = "자바 프로그래밍";
+		String  str= "자바 프로그래밍";
 		byte[] encodeBytes = null;
 		
 		try {
-			encodeBytes = name.getBytes("UTF-8");
+			encodeBytes = str.getBytes("UTF-8");
 			String decodeName1 = new String(encodeBytes, "UTF-8");
 			System.out.println(decodeName1);
 		
