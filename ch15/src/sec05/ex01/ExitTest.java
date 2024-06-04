@@ -9,7 +9,7 @@ public class ExitTest {
 		String temp = sc.nextLine();
 		int score = Integer.parseInt(temp);
 		
-		if(0 <= score && score <=100) {
+		if(0 <= score && score <= 100) {
 			System.out.println("점수 : " + score + "점");
 			System.exit(0);
 		}else {
