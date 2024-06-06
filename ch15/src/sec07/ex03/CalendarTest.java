@@ -16,8 +16,8 @@ public class CalendarTest {
 		int sec = cal.get(Calendar.SECOND);
 		
 		
-		System.out.println("현재 날짜 : " + year + "년" + month + "월" + day + "일");
-		System.out.println("현재 시간 : " + hour + "시 " + min + "분" + sec + "초");
+		System.out.println("현재 날짜 : " + year + "년 " + month + "월 " + day + "일");
+		System.out.println("현재 시간 : " + hour + "시 " + min + "분 " + sec + "초");
 		System.out.println();
 		
 		int week = cal.get(Calendar.DAY_OF_WEEK);

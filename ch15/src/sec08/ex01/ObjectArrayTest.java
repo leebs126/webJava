@@ -8,7 +8,7 @@ public class ObjectArrayTest {
 		String color = null;
 		int qty = 0;
 
-		Object obj[] = new Object[5];
+		Object[] obj = new Object[5];
 		//Object 배열에는 모든 클래스 타입 객체가 저장됩니다.
 		obj[0] = "홍길동";
 		obj[1] = new Product();
