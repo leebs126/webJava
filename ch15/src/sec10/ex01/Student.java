@@ -1,9 +1,9 @@
 package sec10.ex01;
 
 public class Student {
-	String name;
-	int grade;
-	Address address;
+	private String name;
+	private int grade;
+	private Address address;
 
 	public Student(String name, int grade, Address address) {
 		this.name = name;
