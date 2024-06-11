@@ -14,6 +14,7 @@ public class ThreadStateTest {
 		case NEW:
 			System.out.println("스레드 생성 상태");
 			break;
+			
 		case RUNNABLE:
 			System.out.println("스레드 실행 상태");
 			break;
@@ -28,6 +29,7 @@ public class ThreadStateTest {
 		case BLOCKED:
 			System.out.println("스레드 정지 상태");
 			break;
+			
 		case TERMINATED:
 			System.out.println("스레드 종료 상태");
 			break;
