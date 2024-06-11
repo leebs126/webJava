@@ -20,7 +20,7 @@ public class DayEnumTest {
 		Day day = Day.WED;
 		System.out.println(day.name());
 
-		// 열거형은 switch문에서 사용할 수 있습니다.
+		// 열거 타입은 switch문에서 사용할 수 있습니다.
 		switch (day) {
 		case SUN:
 			System.out.println("일요일");
