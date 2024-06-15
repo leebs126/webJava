@@ -12,6 +12,7 @@ public class MultiCatchTest {
 			
 		} catch (ArrayIndexOutOfBoundsException | ArithmeticException e) {
 			System.out.println("실행 예외가 발생했습니다.");
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

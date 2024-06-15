@@ -12,8 +12,10 @@ public class MultiTryCatchTest {
 			
 		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("배열의 범위를 벗어났습니다.");
+			
 		} catch (ArithmeticException e) {
 			System.out.println("0으로 나눌 수 없습니다.");
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
