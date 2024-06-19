@@ -1,4 +1,4 @@
-package com.oracle.rent.ch16.common.exeception;
+package com.oracle.rent.ch16.common.exception;
 
 import java.util.Calendar;
 

@@ -1,6 +1,6 @@
 package com.oracle.rent.ch17.res;
 
-import com.oracle.rent.ch16.common.exeception.RentException;
+import com.oracle.rent.ch16.common.exception.RentException;
 
 public class ResException extends RentException {
 	

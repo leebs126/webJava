@@ -4,7 +4,7 @@ import com.oracle.rent.ch16.car.Car;
 import com.oracle.rent.ch16.car.CarImpl;
 import com.oracle.rent.ch16.car.CarVO;
 import com.oracle.rent.ch16.common.AbstractBase;
-import com.oracle.rent.ch16.common.exeception.RentException;
+import com.oracle.rent.ch16.common.exception.RentException;
 import com.oracle.rent.ch16.member.Member;
 import com.oracle.rent.ch16.member.MemberImpl;
 import com.oracle.rent.ch16.member.MemberVO;
