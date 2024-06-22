@@ -25,10 +25,10 @@ public class ArrayListTest {
 		System.out.println(num1.intValue());
 		System.out.println(student);
 		System.out.println();
-		// #3. 객체 수정하기
 
+		// #3. 객체 수정하기
 		aList.set(0, "hello");
-		aList.set(1, new Float(3.14));
+		aList.set(1, new Float(3.14F));
 		aList.set(2, new College());
 		System.out.println(aList.toString());
 		System.out.println();
