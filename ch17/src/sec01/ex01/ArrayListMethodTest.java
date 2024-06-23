@@ -48,18 +48,17 @@ public class ArrayListMethodTest {
 		System.out.println(aList1.toString()); //[홍길동, 이순신, 1, 2, 3, 4, 손흥민, 임꺽정, 홍길동, 1, 2, 3, 4]
 		System.out.println();
 		
-		aList1.remove(1);  //3번째 객체를 삭제합니다.
+		aList1.remove(1);  //2번째 객체를 삭제합니다.
 		System.out.println("ArrayList에 저장된 객체 수 : " + aList1.size());  //12
 		System.out.println(aList1.toString()); //[홍길동, 1, 2, 3, 4, 손흥민, 임꺽정, 홍길동, 1, 2, 3, 4]
 		System.out.println();
 
-		aList1.remove("홍길동");  //3번째 객체를 삭제합니다.
+		aList1.remove("홍길동");  
 		System.out.println("ArrayList에 저장된 객체 수 : " + aList1.size());  //11
 		System.out.println(aList1.toString()); //[1, 2, 3, 4, 손흥민, 임꺽정, 홍길동, 1, 2, 3, 4] 
-		
+		System.out.println();		
 		
 		//for문으로 전체 객체 접근하기
-		System.out.println();
 		for(int i = 0; i <aList1.size(); i++) {
 			System.out.println(aList1.get(i));
 		}
