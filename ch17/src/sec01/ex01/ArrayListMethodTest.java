@@ -15,7 +15,6 @@ public class ArrayListMethodTest {
 		System.out.println("ArrayList에 저장된 객체 수 : " + aList1.size());
 		System.out.println(aList1.toString());  // [홍길동, 이순신, 임꺽정, 홍길동]
 		
-		
 		//3번째 위치에 추가합니다.
 		aList1.add(2, "손흥민");
 		
@@ -53,7 +52,7 @@ public class ArrayListMethodTest {
 		System.out.println(aList1.toString()); //[홍길동, 1, 2, 3, 4, 손흥민, 임꺽정, 홍길동, 1, 2, 3, 4]
 		System.out.println();
 
-		aList1.remove("홍길동");  
+		aList1.remove("홍길동");  //1번째 요소를 삭제합니다.
 		System.out.println("ArrayList에 저장된 객체 수 : " + aList1.size());  //11
 		System.out.println(aList1.toString()); //[1, 2, 3, 4, 손흥민, 임꺽정, 홍길동, 1, 2, 3, 4] 
 		System.out.println();		
