@@ -25,8 +25,8 @@ public class VectorTest {
 		System.out.println(num1.intValue());
 		System.out.println(student);
 		System.out.println();
+	
 		// #3. 객체 수정하기
-
 		vList.set(0, "hello");
 		vList.set(1, new Float(3.14));
 		vList.set(2, new College());
