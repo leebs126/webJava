@@ -25,7 +25,7 @@ public class QueueTest {
 		System.out.println(requestQueue.size());
 		System.out.println();
 
-		//3. 2. 요청 추가	
+//		3.요청 추가	
 		requestQueue.add("로그인");
 		requestQueue.add("로그인");
 		requestQueue.add("예약 조회");
