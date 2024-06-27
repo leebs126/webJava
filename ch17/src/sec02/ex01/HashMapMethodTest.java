@@ -36,10 +36,10 @@ public class HashMapMethodTest {
 		System.out.println(map.get("fourth")); // key가 존재하지 않으면 null을 출력합니다.
 		System.out.println();
 		
-		//객체 수정하기
 		System.out.println(map.toString());  // {1=100, 2=3.5, third=학번: 20220001 이름: 이순신 학년: 3, second=Hello World!}
-		System.out.println(); 
+		System.out.println();
 		
+		//객체 수정하기
 		map.replace(1, new Integer(500));
 		map.replace("second","자바 프로그래밍");
 		map.replace(2, new  Float(3.5F), new Double(5.5));
