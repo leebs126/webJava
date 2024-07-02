@@ -13,8 +13,8 @@ public class ArrayListGenericTest {
 		aList1.add("차범근");
 		
 		String name1= aList1.get(0);
-//		String name1= (String)aList1.get(0);  //String 타입으로 다운캐스팅 할 필요 없습니다.
-//		String name1= (Integer)aList1.get(0);  //다른 타입으로 다운캐스팅 시 에러를 발생시킵니다.
+//		String name2= (String)aList1.get(0);  //String 타입으로 다운캐스팅 할 필요 없습니다.
+//		String name3= (Integer)aList1.get(0);  //다른 타입으로 다운캐스팅 시 에러를 발생시킵니다.
 		for(int i = 0; i< aList1.size(); i++) {
 			String name2 = aList1.get(i);
 			System.out.println(name2);
