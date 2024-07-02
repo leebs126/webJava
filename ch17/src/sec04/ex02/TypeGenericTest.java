@@ -14,7 +14,7 @@ public class TypeGenericTest {
 		GOrigin<Integer> origin2 = new GOrigin<Integer>();
 		int num = 100;
 		origin2.setData(new Integer(num));
-//		origin1.set(str); //Integer 객체외 다른 타입을 메소드로 전달 시 에러를 발생시킵니다.
+//		origin2.setData(str); //Integer 객체외 다른 타입을 메소드로 전달 시 에러를 발생시킵니다.
 		Integer result2 = origin2.getData();
 //		Integer result2 = (Integer)origin2.getData();
 		System.out.println(result2);
