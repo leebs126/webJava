@@ -30,8 +30,8 @@ public class ArrayListGenericTest {
 		Student s1 = aList2.get(0);
 		System.out.println(s1);
 		System.out.println();
-//		 Student s2 = (Student)list.get(0);  //String 타입으로 다운캐스팅을 할 필요가 없습니다.
-//		 Student s3 = (Integer)list.get(0);  //다른 타입으로 다운캐스팅 시 에러가 발생합니다.
+//		 Student s = (Student)list.get(0);  //String 타입으로 다운캐스팅을 할 필요가 없습니다.
+//		 Student s = (Integer)list.get(0);  //다른 타입으로 다운캐스팅 시 에러가 발생합니다.
 		
 		for(int i= 0; i< aList2.size(); i++) {
 			Student s2 = aList2.get(i);
