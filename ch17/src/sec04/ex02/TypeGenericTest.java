@@ -19,7 +19,7 @@ public class TypeGenericTest {
 //		Integer result2 = (Integer)origin2.getData();
 		System.out.println(result2);
 
-		GOrigin origin3 = new GOrigin( );
+		GOrigin origin3 = new GOrigin();
 //		GOrigin<Object> origin3 = new GOrigin<Object>();
 		origin3.setData("hello!");
 		String result3 = (String)origin3.getData();
