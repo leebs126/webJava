@@ -13,14 +13,14 @@ public class MyMapGenericTest {
 		myMap2.put(100, "사과");
 //		myMap2.put("바나나", 200 ); 다른 타입을 key와 value로 사용하면 컴파일 에러가 발생합니다.
 		String fruit = myMap2.get(100);
-//		String fruit = (Integer)myMap2.get(100);  //다른 타입으로 다운캐스팅하면 컴파일 에러가 발생합니다.
+//		String fruit2 = (Integer)myMap2.get(100);  //다른 타입으로 다운캐스팅하면 컴파일 에러가 발생합니다.
 		System.out.println(fruit);
 		
 		MyMap<String, Student> myMap3 = new MyMap<String, Student>();
 		myMap3.put("서울시", new Student("이순신", 3));
 //		myMap3.put("부산시",new College());  //다른 타입 객체를 value로 사용하면 컴파일 에러가 발생합니다.
 		Student s = myMap3.get("서울시");
-//		Student s = (String)myMap3.get("서울시");  //다른 타입으로 다운캐스팅하면 컴파일 에러가 발생합니다.
+//		Student s2 = (String)myMap3.get("서울시");  //다른 타입으로 다운캐스팅하면 컴파일 에러가 발생합니다.
 		System.out.println(s.toString());
 
 	}
