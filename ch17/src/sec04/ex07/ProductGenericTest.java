@@ -41,8 +41,8 @@ public class ProductGenericTest {
 				System.out.println("제품색상 = " + color);
 				System.out.println("제품수량 = " + qty);
 				System.out.println();
-			}
-		}
+			} //end for
+		} //end while
 	}
 
 	public static void main(String[] args) {
