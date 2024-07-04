@@ -3,7 +3,7 @@ package sec05.ex03;
 
 public class Student  {
 	String name;
-	int grade;
+	int grade;  //학년
 	int score;  //시험점수
 
 

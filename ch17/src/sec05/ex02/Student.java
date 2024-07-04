@@ -3,7 +3,7 @@ package sec05.ex02;
 
 public class Student implements Comparable {
 	String name;
-	int grade;
+	int grade;  //학년
 	int score;  //시험점수
 
 	Student(){ }
