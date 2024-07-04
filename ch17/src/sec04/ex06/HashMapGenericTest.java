@@ -28,9 +28,6 @@ public class HashMapGenericTest {
 //		Student s = (Student)hMap2.get("서울시");  //다운캐스팅 할 필요가 없습니다.
 //		Student s = (College)hMap2.get("서울시");  //컴파일 에러가 발생합니다.
 		System.out.println(s.toString());
-		
-		
-
 	}
 
 }
