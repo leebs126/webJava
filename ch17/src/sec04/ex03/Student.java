@@ -14,8 +14,7 @@ public class Student {
 	}
 
 	@Override
-	public String toString() {
-		
+	public String toString() {		
 		return "이름: " + name +" 학년: " +grade;
 	}
 
