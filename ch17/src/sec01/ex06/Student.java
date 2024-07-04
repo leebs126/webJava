@@ -26,6 +26,7 @@ public class Student {
 	public int hashCode() {
 		int hashCode = Objects.hashCode(hakbun);
 		return hashCode;
+
 	}
 	
 	@Override

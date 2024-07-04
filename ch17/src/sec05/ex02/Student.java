@@ -13,8 +13,10 @@ public class Student implements Comparable {
 		this.grade = grade;
 		this.score = score;
 	}
+	
 	@Override
 	public int compareTo(Object o) {
+//		System.out.println("compareTo() 메서드 호출");
 		if(score > ((Student)o).score) {
 			return 1;
 		}else if(score == ((Student)o).score){

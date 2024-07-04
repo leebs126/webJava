@@ -1,7 +1,9 @@
 package sec05.ex03;
 
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.TreeSet;
+
 
 public class TreeSetSortTest {
 	public static void main(String[] args) {
