@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 public class TreeSetMethodTest {
 	public static void main(String[] args) {
-		TreeSet<String> treeSet = new TreeSet<>();
+		TreeSet<String> treeSet = new TreeSet<String>();
 		treeSet.add("홍길동");
 		treeSet.add("차범근");
 		treeSet.add("손흥민");
