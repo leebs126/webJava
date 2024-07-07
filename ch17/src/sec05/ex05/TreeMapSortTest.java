@@ -1,6 +1,5 @@
 package sec05.ex05;
 
-import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeMap;
@@ -15,7 +14,7 @@ public class TreeMapSortTest {
 		
 		Set<Student> set1 = treeMap.keySet();
 		Iterator<Student> ite1 = set1.iterator();
-		System.out.println("\n시험 점수순로 주소 출력하기");
+		System.out.println("\n시험 점수순으로 주소 출력하기");
 		System.out.println("-----------------------------");
 		while (ite1.hasNext()) {
 			Student key = ite1.next();
