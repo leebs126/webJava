@@ -19,7 +19,7 @@ public class TreeMapMethodTest {
 		
 		System.out.println(treeMap);  // {박지성=광주시, 손흥민=부산시, 유현진=서울시, 이순신=부산시, 차범근=대구시, 홍길동=서울시}
 		System.out.println();
-		Map<String, String> map= treeMap.descendingMap(); //value 값을 역순으로 정렬 
+		Map<String, String> map= treeMap.descendingMap(); //key를 역순으로 정렬 
 		System.out.println(map);  // {홍길동=서울시, 차범근=대구시, 이순신=부산시, 유현진=서울시, 손흥민=부산시, 박지성=광주시}
 		
 		Set<String> set1 = treeMap.keySet();
@@ -42,11 +42,8 @@ public class TreeMapMethodTest {
 			String value = (String) treeMap.get(key);
 			System.out.println(key + "=" + value);
 		}
-		
-		
-		
-		
 		System.out.println();
+		
 		//첫번째 키 얻기
 		String name1 = (String)treeMap.firstKey();  // 박지성
 		System.out.println(name1);
