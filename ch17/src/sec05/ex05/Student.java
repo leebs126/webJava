@@ -1,6 +1,7 @@
 package sec05.ex05;
 
 
+
 public class Student  {
 	String name;
 	int grade;   //학년
@@ -8,9 +9,12 @@ public class Student  {
 
 
 	public Student(){ } 
+	
 	public Student(String name, int grade, int score) {
 		this.name = name;
 		this.grade = grade;
 		this.score = score;
 	}
+	
 }
+
