@@ -71,10 +71,8 @@ public class ResMenu {
 		((AbstractBase)res).displayData(resVO);
 	}
 
-	
-	
 	private void menuResReg() throws ResException, CarException{
-		//예약 하기 전 예약할 렌터카를 먼저 리스트로 조회합니다.
+		//예약 전 예약할 렌터카를 먼저 리스트로 조회합니다.
 		AbstractBase.listCarData();  
 		
 		Scanner sc = new Scanner(System.in);

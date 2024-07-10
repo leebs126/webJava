@@ -11,13 +11,13 @@ public class ReserveImpl extends AbstractBase implements Reserve{
 	public ReserveImpl() {
 		resList = new ArrayList<ResVO>();
 	}
+	
+	
 	//예약 정보 리스트 조회 기능
 	@Override
 	public List<ResVO> listResInfo() throws ResException {
 		return resList;
 	}
-
-	
 	
 	// 차 예약 정보 조회 기능 
 	@Override
