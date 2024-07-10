@@ -39,7 +39,7 @@ public abstract class AbstractBase {
 	// 하위 클래스의 결과값을 출력하는 메소드
 	public void displayData(List<? extends Object> listData) {
 		if(listData == null  || listData.size() == 0) {
-			System.out.println("조회한 데이터가 없습니다.");
+			System.out.println("\n조회한 데이터가 없습니다.");
 		} else {
 			Object obj = listData.get(0);
 			if (obj instanceof MemberVO) {
