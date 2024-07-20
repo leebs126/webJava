@@ -22,15 +22,11 @@ public class ThreadMethodTest {
 						System.out.println("실행 중인 스레드 수: " + Thread.activeCount());
 
 					}
-
-				}
-			});
+				} //end run
+			});// end Thread 
 			thread.setName("스레드-" + i);
 			thread.start();
-					
-		}
-
-
+		}  //end for
 	}
 
 }
