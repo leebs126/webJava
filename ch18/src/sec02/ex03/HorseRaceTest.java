@@ -1,6 +1,6 @@
 package sec02.ex03;
 
-public class HorseRaceTest4 {
+public class HorseRaceTest {
 
 	public static void main(String[] args) {
 		Horse horse1 = new Horse(1);
