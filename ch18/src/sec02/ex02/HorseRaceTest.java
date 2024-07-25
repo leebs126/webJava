@@ -1,6 +1,6 @@
 package sec02.ex02;
 
-public class HorseRaceTest3 {
+public class HorseRaceTest {
 
 	public static void main(String[] args) {
 		for (int i = 0; i < 10; i++) {
