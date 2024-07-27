@@ -8,8 +8,8 @@ public class InterruptMethodTest1  {
 		
 		System.out.println("videoThread 상태: " + videoThread.getState());
 		
-		//interrupt() 메소드 호출
-		videoThread.interrupt(); //메소드 호출 후 실제 예외 발생까지 시간이 걸립니다.
+		//interrupt() 메서드 호출
+		videoThread.interrupt(); //메서드 호출 후 실제 예외 발생까지 시간이 걸립니다.
 		System.out.println("videoThread 상태: " + videoThread.getState());
 		
 		Thread.sleep(100);
