@@ -2,7 +2,7 @@ package sec02.ex05;
 
 public class InterruptMethodTest1  {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args)  throws InterruptedException {
 		VideoThread videoThread = new VideoThread();
 		videoThread.start();
 		
