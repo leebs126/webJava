@@ -2,9 +2,9 @@ package sec02.ex05;
 
 public class VideoThread extends Thread {
 
-	public VideoThread() {
-	}
+	public VideoThread() {}
 
+	@Override
 	public void run() {
 		try {
 			

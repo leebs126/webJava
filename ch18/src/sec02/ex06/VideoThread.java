@@ -2,9 +2,9 @@ package sec02.ex06;
 
 public class VideoThread extends Thread {
 
-	public VideoThread() {
-	}
+	public VideoThread() {}
 
+	@Override
 	public void run() {
 		while(true) {
 			System.out.println("동영상을 재생합니다.");
