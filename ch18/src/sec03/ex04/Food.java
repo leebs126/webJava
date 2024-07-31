@@ -9,7 +9,7 @@ public class Food {
 			for (int i = 0; i < 5; i++) {
 				System.out.println("웨이터가 손님에게 주문을 받습니다.");
 			}
-			int menuNum = (int)(Math.random() * 3) + 0;
+			int menuNum = (int)(Math.random() * 3);
 			foodName = menu[menuNum]; //메뉴에서 주문한 음식 이름을 저장합니다.
 			
 			System.out.println("웨이터가 " + foodName +" 주문을 주방에 전달합니다.\n");
