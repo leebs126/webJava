@@ -2,17 +2,20 @@ package sec03.ex02;
 
 public class SyncTest1 {
 	Thread t1 = new Thread("thread1") {
+		@Override
 		public void run() {
 			method1();
 		}
 	};
 	Thread t2 = new Thread("thread2") {
+		@Override
 		public void run() {
 			method2();
 		}
 	};
 
 	Thread t3 = new Thread("thread3") {
+		@Override
 		public void run() {
 			method3();
 		}
