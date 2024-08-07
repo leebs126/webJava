@@ -31,7 +31,7 @@ public class SyncTest1 {
 		System.out.println("thread1: " + t1.getState());
 		System.out.println("thread2: " + t2.getState());
 		System.out.println("thread3: " + t3.getState());
-		for (long j = 0; j < 100000000000L; j++) {
+		for (long  i = 0; i < 100000000000L; i++) {
 		} // 시간 지연
 	}
 
