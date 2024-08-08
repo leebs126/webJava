@@ -31,8 +31,9 @@ public class SyncTest1 {
 		System.out.println("thread1: " + t1.getState());
 		System.out.println("thread2: " + t2.getState());
 		System.out.println("thread3: " + t3.getState());
-		for (long  i = 0; i < 100000000000L; i++) {
-		} // 시간 지연
+		System.out.println();
+		
+		for (long  i = 0; i < 100000000000L; i++) {} // 시간 지연
 	}
 
 	public synchronized void method2() {
@@ -45,8 +46,9 @@ public class SyncTest1 {
 		System.out.println("thread1: " + t1.getState());
 		System.out.println("thread2: " + t2.getState());
 		System.out.println("thread3: " + t3.getState());
-		for (long i = 0; i < 100000000000L; i++) {
-		} // 시간 지연
+		System.out.println();
+		
+		for (long i = 0; i < 100000000000L; i++) {} // 시간 지연
 	}
 
 	public synchronized void method3() {
@@ -59,8 +61,8 @@ public class SyncTest1 {
 		System.out.println("thread1: " + t1.getState());
 		System.out.println("thread2: " + t2.getState());
 		System.out.println("thread3: " + t3.getState());
-		for (long i = 0; i < 100000000000L; i++) {
-		} // 시간 지연
+		System.out.println();
+		for (long i = 0; i < 100000000000L; i++) {} // 시간 지연
 	}
 
 	void startAll() {
