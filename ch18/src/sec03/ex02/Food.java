@@ -3,8 +3,7 @@ package sec03.ex02;
 public class Food {
 	private static String[] menu = {"돈까스", "오므라이스", "된장찌게", "육개장"};
 	String foodName;
-	public Food() {
-	}
+	public Food() {}
 	
 	//주문을 받는 메소드
 	public synchronized void receiveOrder() {
