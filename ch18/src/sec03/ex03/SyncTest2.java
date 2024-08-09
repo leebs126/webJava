@@ -27,8 +27,7 @@ public class SyncTest2 {
 
 		try {
 			Thread.sleep(100);
-		} catch (InterruptedException e) {
-		}
+		} catch (InterruptedException e) {}
 		
 		System.out.println("실행 스레드: " + Thread.currentThread().getName());
 		System.out.println("thread1: " + t1.getState());
@@ -48,14 +47,14 @@ public class SyncTest2 {
 		System.out.println("thread2: " + t2.getState());
 		System.out.println("thread3: " + t3.getState());
 
-		for (long j = 0; j < 100000000000L; j++) {}	}
+		for (long j = 0; j < 100000000000L; j++) {}	
+	}
 
 	public void method3() {
 		System.out.println("\n method3() 메소드");
 		try {
 			Thread.sleep(100);
-		} catch (InterruptedException e) {
-		}
+		} catch (InterruptedException e) {}
 
 		System.out.println("실행 스레드: " + Thread.currentThread().getName());
 		System.out.println("thread1: " + t1.getState());
@@ -63,8 +62,7 @@ public class SyncTest2 {
 		System.out.println("thread3: " + t3.getState());
 		
 		for (long i = 0; i < 10000000L; i++) {
-			for (long j = 0; j < 100000000000L; j++) {
-			}
+			for (long j = 0; j < 100000000000L; j++) {}
 		}
 	}
 
