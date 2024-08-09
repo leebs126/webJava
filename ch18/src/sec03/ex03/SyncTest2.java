@@ -23,7 +23,7 @@ public class SyncTest2 {
 	};
 	
 	public synchronized void method1() {
-		System.out.println("\n method1() 메소드");
+		System.out.println("\n method1() 메소드 호출");
 
 		try {
 			Thread.sleep(100);
@@ -37,7 +37,7 @@ public class SyncTest2 {
 	}
 
 	public synchronized void method2() {
-		System.out.println("\n method2() 메소드");
+		System.out.println("\n method2() 메소드 호출");
 		try {
 			Thread.sleep(100);
 		} catch (InterruptedException e) {}
@@ -51,7 +51,7 @@ public class SyncTest2 {
 	}
 
 	public void method3() {
-		System.out.println("\n method3() 메소드");
+		System.out.println("\n method3() 메소드 호출");
 		try {
 			Thread.sleep(100);
 		} catch (InterruptedException e) {}

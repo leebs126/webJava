@@ -21,7 +21,7 @@ public class SyncTest4 {
 
 	
 	public synchronized void method1() {
-		System.out.println("\n method1() 메소드");
+		System.out.println("\n method1() 메소드  호출");
 
 		System.out.println("실행 스레드: " + Thread.currentThread().getName());
 		System.out.println("thread1: " + t1.getState());
@@ -32,7 +32,7 @@ public class SyncTest4 {
 
 	public void method2() {
 		synchronized(objKey) {
-			System.out.println("\n method2() 메소드");
+			System.out.println("\n method2() 메소드 호출");
 			System.out.println("실행 스레드: " + Thread.currentThread().getName());
 			System.out.println("thread1: " + t1.getState());
 			System.out.println("thread2: " + t2.getState());
