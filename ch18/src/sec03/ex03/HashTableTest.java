@@ -1,5 +1,7 @@
 package sec03.ex03;
 
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
 
@@ -41,9 +43,7 @@ public class HashTableTest {
 		try {
 			threadA.join();
 			threadB.join();
-		}catch(Exception e) {
-			
-		}
+		}catch(Exception e) {}
 		
 		//총 엔크리 개수 얻기
 		int size = map.size();

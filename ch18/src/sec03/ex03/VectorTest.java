@@ -1,5 +1,7 @@
 package sec03.ex03;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Vector;
 
@@ -40,9 +42,7 @@ public class VectorTest {
 		try {
 			threadA.join();
 			threadB.join();
-		}catch(Exception e) {
-			
-		}
+		}catch(Exception e) {}
 		
 		//저장된 총 이름 수 얻기
 		int size = vList.size();
