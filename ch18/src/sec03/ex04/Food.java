@@ -15,6 +15,7 @@ public class Food {
 			System.out.println("웨이터가 " + foodName +" 주문을 주방에 전달합니다.\n");
 
 			this.notify();
+			
 			try{
 				this.wait();
 			}catch(InterruptedException e){}
