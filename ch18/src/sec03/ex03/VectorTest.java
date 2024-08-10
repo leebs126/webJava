@@ -13,8 +13,6 @@ public class VectorTest {
 //		List<String> vList = new ArrayList<>();
 //		List<String> vList = Collections.synchronizedList(new ArrayList<>());
 		
-		
-		
 		Thread threadA = new Thread() {
 			@Override
 			public void run() {
@@ -47,9 +45,6 @@ public class VectorTest {
 		//저장된 총 이름 수 얻기
 		int size = vList.size();
 		System.out.println("총 학생 수 : " + size);
-		
-
 	}
-
 }
 

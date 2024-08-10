@@ -13,9 +13,6 @@ public class HashTableTest {
 		Map<Integer, String> map = new Hashtable<Integer, String>();
 //		Map<Integer, String> map = Collections.synchronizedMap(new  Hashtable<Integer, String>());
 		
-		
-		
-		
 		Thread threadA = new Thread() {
 			@Override
 			public void run() {
