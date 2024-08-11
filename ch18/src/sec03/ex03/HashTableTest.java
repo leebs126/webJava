@@ -11,7 +11,7 @@ public class HashTableTest {
 		//Vector 객체 생성
 //		Map<Integer, String> map = new HashMap<Integer, String>();
 		Map<Integer, String> map = new Hashtable<Integer, String>();
-//		Map<Integer, String> map = Collections.synchronizedMap(new  Hashtable<Integer, String>());
+//		Map<Integer, String> map = Collections.synchronizedMap(new  HashMap<Integer, String>());
 		
 		Thread threadA = new Thread() {
 			@Override
