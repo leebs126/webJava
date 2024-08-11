@@ -16,7 +16,7 @@ public class VectorTest {
 		Thread threadA = new Thread() {
 			@Override
 			public void run() {
-				for(int i=1 ; i<=100; i++) {
+				for(int i = 1 ; i <= 100; i++) {
 					vList.add("홍길동"+i);
 				}
 			}
@@ -25,7 +25,7 @@ public class VectorTest {
 		Thread threadB = new Thread() {
 			@Override
 			public void run() {
-				for(int i=101 ; i<=200; i++) {
+				for(int i = 101 ; i <= 200; i++) {
 					vList.add("이순신"+i);
 				}		
 			}
