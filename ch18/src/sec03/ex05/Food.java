@@ -63,6 +63,7 @@ public class Food {
 			
 			
 			notifyAll();
+			
 			try{
 				wait();
 			}catch(InterruptedException e){}
