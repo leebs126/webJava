@@ -15,8 +15,8 @@ public class ByteDataReadTest2 {
 				if(count == -1) break;
 				for(int i=0 ; i < count; i++) {
 					System.out.print((char)buffer[i]);
-					
 				}
+				
 				System.out.print("\t count: " + count);
 				System.out.println();
 			}
