@@ -22,6 +22,8 @@ public class FileCopyTest2 {
 	            fos.write(buffer,0,count);
 	         }
 	         System.out.println("파일을 복사했습니다.");
+	         fis.close();
+			 fos.close();
 	      }catch (IOException  e) {
 	         e.printStackTrace();
 	      }
