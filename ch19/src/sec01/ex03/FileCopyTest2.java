@@ -11,15 +11,15 @@ public class FileCopyTest2 {
 	public static void main(String[] args) {
 		try {
 			InputStream fis = new FileInputStream("C:\\test\\test1.txt");
-	         OutputStream out=new FileOutputStream("C:\\test\\test1_copy.txt");
-	         byte[] buffer=new byte[5];			
+	         OutputStream fos = new FileOutputStream("C:\\test\\test1_copy.txt");
+	         byte[] buffer = new byte[5];			
 	         while(true){
 	            int count=fis.read(buffer); //버퍼에 읽어들인 문자 개수
 					
 	            if(count==-1) break;   //버퍼의 마지막에 도달했는지 체크
 	            
-//	            out.write(buffer);
-	            out.write(buffer,0,count);
+//	            fos.write(buffer);
+	            fos.write(buffer,0,count);
 	         }
 	         System.out.println("파일을 복사했습니다.");
 	      }catch (IOException  e) {
