@@ -11,7 +11,7 @@ public class CharArrayDataWriteTest2 {
 			
 			char[] cArray = {'자' , '바' ,' ', '프', '로', '그', '래', '밍', '입', '니', '다', '.'}; 
 			
-			writer.write(cArray, 1, 7);  //2번째 문자 포함해서 7자를 출력합니다.
+			writer.write(cArray, 1, 7);  //배열의 2번째 요소 문자 포함해서 7자를 출력합니다.
 			writer.flush();
 			writer.close();
 			
