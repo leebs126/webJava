@@ -1,6 +1,5 @@
 package sec02.ex02;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -16,8 +15,7 @@ public class ImageCopyTest1 {
 			
 			while (true) {
 				int count = fis.read();
-				if (count == -1)
-					break;
+				if (count == -1)  break;
 				fos.write(count);
 			}
 
@@ -28,7 +26,7 @@ public class ImageCopyTest1 {
 		}
 		
 		end = System.currentTimeMillis();
-		time = end-start;
+		time = end - start;
 		System.out.println("복사 시간:" + time +"ms");
 
 	}

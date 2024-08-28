@@ -16,8 +16,7 @@ public class ImageCopyTest2 {
 			
 			while (true) {
 				int count = fis.read(buffer);
-				if (count == -1)
-					break;
+				if (count == -1)  break;
 				fos.write(buffer, 0, count);
 			}
 
@@ -28,7 +27,7 @@ public class ImageCopyTest2 {
 		}
 		
 		end = System.currentTimeMillis();
-		time = end-start;
+		time = end - start;
 		System.out.println("복사 시간:" + time +"ms");
 
 	}
