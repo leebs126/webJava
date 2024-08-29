@@ -13,6 +13,7 @@ public class ImageCopyTest3 {
 		start = System.currentTimeMillis();
 		
 		try {
+			
 			FileInputStream fis = new FileInputStream("src\\sec02\\ex02\\flowers.jpg");
 			BufferedInputStream bis  = new BufferedInputStream(fis);
 //			BufferedInputStream bis  = new BufferedInputStream(fis, 1024);
