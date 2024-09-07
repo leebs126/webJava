@@ -3,18 +3,18 @@ package sec03.ex02;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
+import java.nio.charset.Charset;
 
 public class PrintWriterTest {
 	public static void main(String[] args)  throws Exception {
 		File file1 = new File("src\\sec03\\ex02\\fileWriter.txt");
 		File file2 = new File("src\\sec03\\ex02\\printWriter.txt");
-		
 		PrintWriter pw1 = new PrintWriter(System.out);
-//		PrintStream out1 = new PrintWriter(System.out, true, "UTF-8");
+//		PrintWriter pw1 = new PrintWriter(System.out, true,  Charset.forName("UTF-8"));
 		
 		FileWriter fw = new FileWriter(file1);
 		PrintWriter pw2 = new PrintWriter(file2);
-//		PrintWriter pw2 = new PrintWriter(file2, true, "UTF-8");
+//		PrintWriter pw2 = new PrintWriter(file2, "UTF-8");
 
 		pw1.println("안녕하세요");
 		pw1.println(100);  

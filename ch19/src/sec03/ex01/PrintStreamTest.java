@@ -17,7 +17,7 @@ public class PrintStreamTest {
 		OutputStreamWriter writer = new OutputStreamWriter(fos);
 		
 		PrintStream ps2 = new PrintStream(file2);
-//		PrintStream ps2 = new PrintStream(file1, true, "UTF-8");
+//		PrintStream ps2 = new PrintStream(file2, "UTF-8");
 		
 
 		ps1.println("안녕하세요");
@@ -43,7 +43,7 @@ public class PrintStreamTest {
 		ps2.println(3.14);
 		ps2.println("자바 프로그래밍입니다.");
 		ps2.flush();
-
+		
 		ps1.close();
 		ps2.close();
 
