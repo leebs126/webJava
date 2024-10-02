@@ -9,7 +9,7 @@ public class InetAddressTest {
 	public static void main(String[] args) throws UnknownHostException {
 
 		//InetAddress객체 생성
-		InetAddress addr1 = InetAddress.getByName("www.oracle.com");  //104.74.162.89
+		InetAddress addr1 = InetAddress.getByName("www.oracle.com");  //23.52.33.217
 		InetAddress addr2 = InetAddress.getByAddress(new byte[] {(byte)104,(byte)74,(byte)162,(byte)89});
 		InetAddress addr3= InetAddress.getByAddress("www.jweb.com", new byte[] {(byte)104,(byte)74,(byte)162,(byte)89});
 		System.out.println(addr1);
