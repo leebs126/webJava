@@ -7,10 +7,10 @@ import java.net.UnknownHostException;
 public class InetSocketAddressTest {
 
 	public static void main(String[] args) throws UnknownHostException {
-		//InetAddress객체생성
+		//InetAddress 객체 생성
 		InetAddress addr1 = InetAddress.getByName("www.oracle.com");
 		int port = 9999;
-		
+				
 		InetSocketAddress isa1 = new InetSocketAddress(port);
 		InetSocketAddress isa2 = new InetSocketAddress("www.oracle.com", port);
 		InetSocketAddress isa3 = new InetSocketAddress(addr1, port);
@@ -20,11 +20,11 @@ public class InetSocketAddressTest {
 		System.out.println();
 
 		//InetSocketAddress 메서드
-		InetAddress ina = isa2.getAddress(); // InetAddress
+		InetAddress ina = isa2.getAddress(); // InetAddress 객체 리턴
 		System.out.println(ina); 
 		System.out.println(ina.getHostName());
 		System.out.println(isa2.getHostName());
-		System.out.println(isa2.getPort()); // 20000
+		System.out.println(isa2.getPort()); 
 
 	}
 
