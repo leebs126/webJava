@@ -21,8 +21,8 @@ public class SimpleClientTest {
 		Socket socket = null;
 		String message = null;
 		try {
-			socket = new Socket("121.168.202.151", 8888);
-//			socket = new Socket("127.0.0.1", 8888);
+//			socket = new Socket("220.72.44.237", 8888);
+			socket = new Socket("127.0.0.1", 8888);
 //			socket = new Socket("121.168.202.151", 8888, InetAddress.getLocalHost(), 9999);
 			is = socket.getInputStream();
 			os  = socket.getOutputStream();
