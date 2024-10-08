@@ -28,7 +28,7 @@ public class ChatServerTest {
 		try {
 			serverSocket = new ServerSocket(8888);
 			System.out.println("서버 실행 중...");
-			socket = serverSocket.accept();  //accept() 메서드 호출 시 클라이언트 접속을 대기합니다.(스레드 대기 상태)
+			socket = serverSocket.accept();  //accept() 메서드 호출 시 클라이언트 접속을 대기합니다.(스레드 대기(Blocked) 상태)
 
 			is = socket.getInputStream();
 			os = socket.getOutputStream();
