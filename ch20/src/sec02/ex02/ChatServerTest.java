@@ -27,7 +27,7 @@ public class ChatServerTest {
 			os = socket.getOutputStream();
 			
 			RecvThread rThread=new RecvThread(socket);
-			rThread.start( );
+			rThread.start();
 			
 			Scanner sc = new Scanner(System.in);
 			
