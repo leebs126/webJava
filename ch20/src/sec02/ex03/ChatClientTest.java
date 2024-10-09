@@ -29,7 +29,6 @@ public class ChatClientTest {
 			
 			bw = new BufferedWriter(new OutputStreamWriter(os));
 			writer = new PrintWriter(bw, true);
-			
 			writer.println(nickName);
 			
 			while (true) {
