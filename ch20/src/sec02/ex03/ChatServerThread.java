@@ -27,7 +27,6 @@ public class ChatServerThread extends Thread {
 		this.nickName = nickName;
 		this.socket = socket;
 		threads.add(this); // 사용자 수신 스레드 객체를 ArrayList에 저장합니다.
-//		System.out.println("socket is created");
 	}
 
 	public void run() {
@@ -43,7 +42,7 @@ public class ChatServerThread extends Thread {
 				try {
 					br = new BufferedReader(new InputStreamReader(is));
 					message = br.readLine();
-					if (message == null)
+					if (message == null)  //클라이언트 Socket 객체 소멸 시 null을 전송함
 						throw new IOException();
 
 					sendMessageAll(message);// 모든 수신 스레드에 대해서 메시지를 송신합니다.
