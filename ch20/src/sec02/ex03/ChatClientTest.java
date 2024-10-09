@@ -25,7 +25,7 @@ public class ChatClientTest {
 			os = socket.getOutputStream();
 			
 			RecvThread rThread=new RecvThread(socket);
-			rThread.start( );
+			rThread.start();
 			
 			bw = new BufferedWriter(new OutputStreamWriter(os));
 			writer = new PrintWriter(bw, true);
@@ -41,6 +41,7 @@ public class ChatClientTest {
 			sc.close();
 			writer.close();
 			socket.close();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
