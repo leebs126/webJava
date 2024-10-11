@@ -31,7 +31,7 @@ public class FileClientTest1 {
 			
 
 			while (true) {
-				int data = fis.read(); // 버퍼에 읽어들인 문자개수
+				int data = fis.read(); // 1바이트씩 파일에서 입력받습니다.
 				if (data == -1)
 					break;
 
