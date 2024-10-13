@@ -14,8 +14,9 @@ public class SerializationServerTest {
 		ArrayList<Employee> eList = new ArrayList<Employee>();
 		
 		serverSocket = new ServerSocket(9999);
+		System.out.println("서버 실행 중!!!!");
+		
 		while (true) {
-			System.out.println("서버 실행 중!!!!");
 			Socket socket= serverSocket.accept();
 			
 			OutputStream os = socket.getOutputStream();
