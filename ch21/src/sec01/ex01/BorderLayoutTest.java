@@ -9,7 +9,7 @@ public class BorderLayoutTest {
 
 	public static void main(String[] args) {
 		Frame frame;
-		Button center, west, east, north, south;
+		Button center, west, east, south;
 		TextField tf1;
 
 		frame = new Frame("BorderLayout 예제");
@@ -19,7 +19,7 @@ public class BorderLayoutTest {
 		center = new Button("button4");
 		tf1 = new TextField("입력창입니다.");
 
-		//컴포넌트들을 프레임의 영역에 배치합니다. 
+		//컴포넌트들을 Frame의 영역에 배치합니다. 
 		frame.add(tf1, BorderLayout.NORTH);
 		frame.add(south, BorderLayout.SOUTH);
 		frame.add(west, BorderLayout.WEST);
@@ -27,7 +27,7 @@ public class BorderLayoutTest {
 		frame.add(center, BorderLayout.CENTER);
 		frame.setSize(400, 400);
 		
-		frame.setVisible(true); //프레임을 보이게 설정합니다.
+		frame.setVisible(true); //Frame을 보이게 설정합니다.
 
 	}
 
