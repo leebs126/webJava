@@ -31,7 +31,7 @@ public class GridLayoutTest {
 		frame.add(button3);
 		frame.add(tf3);
 		
-		frame.pack( );
+		frame.pack();  //frame의 크기를 컴포넌트와 일치하게 합니다.
 		frame.setVisible(true);
 	}
 
