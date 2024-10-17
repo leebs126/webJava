@@ -22,8 +22,8 @@ public class GridLayoutTest {
 		tf2 = new TextField("입력창2입니다.");
 		tf3 = new TextField("입력창3입니다.");
 
-//		frame.setLayout (new GridLayout(2,0));
-		frame.setLayout (new GridLayout(3,0));
+		frame.setLayout (new GridLayout(2,0));
+//		frame.setLayout (new GridLayout(3,0));
 		frame.add(button1);
 		frame.add(tf1);
 		frame.add(button2);
@@ -31,7 +31,8 @@ public class GridLayoutTest {
 		frame.add(button3);
 		frame.add(tf3);
 		
-		frame.pack();  //frame의 크기를 컴포넌트와 일치하게 합니다.
+
+//		frame.pack();  //frame의 크기를 컴포넌트와 일치하게 합니다.
 		frame.setVisible(true);
 	}
 
