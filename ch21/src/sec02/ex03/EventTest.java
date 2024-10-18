@@ -23,8 +23,8 @@ public class EventTest {
 		test.startFrame();
 	}
 	
-	public void startFrame() {
-		btn1.addActionListener(new ActionListener() {
+	public void startFrame() { 
+		btn1.addActionListener(new ActionListener() {  //이벤트 소스와 이벤트 핸들러 생성, 연결을 한번에 합니다.
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("버튼1 클릭");

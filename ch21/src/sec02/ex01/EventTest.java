@@ -10,7 +10,7 @@ public class EventTest implements ActionListener {
 
 	public EventTest() {
 		frame = new Frame("이벤트 핸들러예제");
-		btn1 = new Button("btn1");
+		btn1 = new Button("btn1");  // 1.이벤트를 발생시킬 이벤트 소스를 지정합니다.
 		btn2 = new Button("btn2");
 		btn3 = new Button("btn3");
 		btn4 = new Button("btn4");
@@ -24,7 +24,7 @@ public class EventTest implements ActionListener {
 	}
 
 	public void startFrame() {
-		btn1.addActionListener(this);
+		btn1.addActionListener(this);   // 3.이벤트 소스와 이벤트 핸들러를 연결합니다.
 		btn2.addActionListener(this);
 		btn3.addActionListener(this);
 		btn4.addActionListener(this);
@@ -40,7 +40,7 @@ public class EventTest implements ActionListener {
 	}
 
 	@Override
-	public void actionPerformed(ActionEvent e) {
+	public void actionPerformed(ActionEvent e) {  // 2.ActionListener의 추상 메서드를 구현하여 이벤트 발생 시 이벤트를 처리합니다.
 		if (e.getSource() == btn1) {
 			System.out.println("버튼1 클릭");
 			System.out.println(e.getActionCommand()); //버튼 이름을 얻습니다.
