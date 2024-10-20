@@ -43,7 +43,7 @@ public class JTabTest {
 		jtab.addTab("탭3", tabicon, jpan, "세 번째 탭입니다.");
 		jFrame.add(jtab);
 		
-		jFrame.setPreferredSize(new Dimension(500,500)); // 프레임의 너비와 높이 지정		
+		jFrame.setPreferredSize(new Dimension(500, 500)); // 프레임의 너비와 높이 지정		
 		jFrame.pack();		
 		jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // frame 종료		
 		jFrame.setVisible(true);

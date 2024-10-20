@@ -25,7 +25,7 @@ public class JFrameTest {
 		jFrame.add(btn3, BorderLayout.EAST);
 		jFrame.add(btn4, BorderLayout.CENTER);
 		
-		jFrame.setPreferredSize(new Dimension(500,500)); // Frame의 너비와 높이 지정		
+		jFrame.setPreferredSize(new Dimension(500, 500)); // Frame의 너비와 높이 지정		
 		jFrame.pack();		
 		jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // frame 종료		
 		jFrame.setVisible(true);
