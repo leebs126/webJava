@@ -42,10 +42,10 @@ public class JOptionTest extends JFrame implements ActionListener {
 				                             "메시지",
 				                              JOptionPane.INFORMATION_MESSAGE);
 		}else if(e.getSource( )==btn2){
-			JOptionPane.showMessageDialog(this,
-				                              "확인 메시지 박스",
-				                              "확인",
-				                              JOptionPane.YES_NO_CANCEL_OPTION);
+			JOptionPane.showConfirmDialog(this,
+						                    "확인 메시지 박스",
+						                    "확인",
+						                    JOptionPane.YES_NO_CANCEL_OPTION);
 		}else if(e.getSource( )==btn3){
 			String answer=JOptionPane.showInputDialog(this,
 				                              "입력 메시지 박스",
@@ -60,7 +60,7 @@ public class JOptionTest extends JFrame implements ActionListener {
 						               JOptionPane.INFORMATION_MESSAGE,
 						               null,
 						               str,
-					               str[0]);
+						               str[0]);
 
 		}
 	}
