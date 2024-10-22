@@ -59,11 +59,11 @@ class Dialog1 extends JDialog {
 	ImageIcon icon1;
 	JLabel dlb = new JLabel("");
 
-	public Dialog1(String str) {
+	public Dialog1(String title) {
 		getContentPane().add(dlb);
 		icon1 = new ImageIcon("src\\sec01\\ex05\\flowers.jpg");
 		dlb.setIcon(icon1);
-		setTitle(str);
+		setTitle(title);
 		setLocation(200, 200);
 		setSize(400, 400);
 		setModal(true);
@@ -79,7 +79,7 @@ class Dialog2 extends JDialog {
 		setLayout(new FlowLayout());
 		add(tf);
 		add(okButton);
-		setTitle("입력 다이얼로그창입니다.");
+		setTitle(title);
 		setLocation(200, 200);
 		setSize(400, 100);
 		setVisible(true);
