@@ -39,7 +39,6 @@ public class JDialogTest extends JFrame  {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-//				new Dialog2(this, label, "두번째 다이얼로그창입니다.");
 				new Dialog2(label, "두번째 다이얼로그창입니다.");
 			}
 			
