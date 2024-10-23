@@ -19,7 +19,7 @@ public class MovieController {
 	}
 	
 	public void delTitle(String title,List movieList) throws IOException{
-		movieModel.addTitle(title,movieList);
+		movieModel.delTitle(title,movieList);
 	}
 
 }
