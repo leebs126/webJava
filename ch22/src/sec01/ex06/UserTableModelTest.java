@@ -11,12 +11,9 @@ public class UserTableModelTest extends JFrame {
 	JTextField tCondition;
 	JButton searchBtn;
 	JTable memTable;
-
 	JButton updateBtn, deleteBtn;
-	Object[][] emp  = new Object[0][4];
 
 	public UserTableModelTest() {
-
 		initTableModel();
 		setTitle("사용자 정의 테이블 실습");
 		setLayout(new BorderLayout());
@@ -37,16 +34,15 @@ public class UserTableModelTest extends JFrame {
 		tCondition=new JTextField(10);
 		lCondition=new JLabel("입력창");
 		memTable=new JTable();
-		memTable.setModel(new UserTableModel(emp));
 		
 		searchBtn=new JButton("조회하기");
 		searchBtn.addActionListener(new ActionListener( ) {
 		public void actionPerformed(ActionEvent e) {
 			Object[][] data={{"220000","박길동","총무부"},
-				                {"220001","홍길동","관리부"},
-				                {"220002","이순신","회계부"},
-				                {"220003","임꺽정","개발부"},
-				                {"220004","박지성","관리부"}
+				             {"220001","홍길동","관리부"},
+				             {"220002","이순신","회계부"},
+				             {"220003","임꺽정","개발부"},
+				             {"220004","박지성","관리부"}
 			                };
 		
 			memTable.setModel(new UserTableModel(data));
