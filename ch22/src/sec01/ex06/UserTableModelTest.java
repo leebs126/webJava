@@ -7,11 +7,9 @@ import java.awt.event.*;
 public class UserTableModelTest extends JFrame {
 	JPanel searchPanel;
 	JPanel bPanel;
-	JList memberJList;
 	JLabel lCondition;
 	JTextField tCondition;
 	JButton searchBtn;
-	JComboBox combo;
 	JTable memTable;
 
 	JButton updateBtn, deleteBtn;
@@ -38,8 +36,6 @@ public class UserTableModelTest extends JFrame {
 		searchPanel=new JPanel( );
 		tCondition=new JTextField(10);
 		lCondition=new JLabel("입력창");
-		memberJList=new JList( );
-		memberJList.setBackground(Color.GREEN);
 		memTable=new JTable();
 		memTable.setModel(new UserTableModel(emp));
 		
@@ -47,12 +43,11 @@ public class UserTableModelTest extends JFrame {
 		searchBtn.addActionListener(new ActionListener( ) {
 		public void actionPerformed(ActionEvent e) {
 			Object[][] data={{"220000","박길동","총무부"},
-			                {"220001","홍길동","관리부"},
-			                {"220002","이순신","회계부"},
-			                {"220003","임꺽정","개발부"},
-			                {"220004","박지성","관리부"}
+				                {"220001","홍길동","관리부"},
+				                {"220002","이순신","회계부"},
+				                {"220003","임꺽정","개발부"},
+				                {"220004","박지성","관리부"}
 			                };
-	
 		
 			memTable.setModel(new UserTableModel(data));
 			}

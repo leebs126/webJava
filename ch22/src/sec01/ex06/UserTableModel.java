@@ -7,7 +7,7 @@ public class UserTableModel extends AbstractTableModel {
 	Object[][] data = { { " ", " ", " ", " " } };
 	
 	//테이블의 첫번째 열의 값들은 수정할 수 없습니다.
-	boolean[] columnEditables = new boolean[] { false, true, true };
+	boolean[] columnEditables = new boolean[] {false, true, true};
 
 	public UserTableModel(Object[][] data) {
 		this.data = data;
