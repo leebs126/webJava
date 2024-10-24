@@ -22,8 +22,8 @@ public class MovieWindow extends JFrame implements ActionListener {
 		tMovieTitle = new JTextField(30);
 		btnTitleInsert = new JButton("영화제목 추가");
 		btnSave = new JButton("영화제목 파일 저장");
+		
 		movieList = new List();
-		controller = new MovieController();
 		btnExit = new JButton("종료");
 		
 		tMovieTitle = new JTextField(30);
