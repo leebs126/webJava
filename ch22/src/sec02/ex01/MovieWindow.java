@@ -88,7 +88,7 @@ public class MovieWindow extends JFrame implements ActionListener {
 				controller.delTitle(mTitle, movieList);
 				resultMsg = "영화제목을 삭제했습니다.";
 			}
-			// 다이얼로그로 처리 결과를 보여 준다.
+			// 메시지박스로 처리 결과를 보여 준다.
 			JOptionPane.showMessageDialog(this, resultMsg, "메시지 박스", JOptionPane.INFORMATION_MESSAGE);
 			if (e.getSource() == btnExit)
 				System.exit(1);
