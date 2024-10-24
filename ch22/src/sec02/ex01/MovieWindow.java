@@ -64,9 +64,10 @@ public class MovieWindow extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		String mTitle = null;
 		try {
 
-			String mTitle = e.getActionCommand();
+			mTitle = e.getActionCommand();
 
 			// 영화정보를 추가한다.
 			if (e.getSource() == btnTitleInsert) {
@@ -83,6 +84,7 @@ public class MovieWindow extends JFrame implements ActionListener {
 				controller.saveTitles(movieList);
 				resultMsg = "영화제목을 파일에 저장했습니다.";
 			} else {
+				mTitle = e.getActionCommand();
 				controller.delTitle(mTitle, movieList);
 				resultMsg = "영화제목을 삭제했습니다.";
 			}
