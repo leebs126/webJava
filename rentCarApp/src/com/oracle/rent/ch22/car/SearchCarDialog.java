@@ -157,8 +157,8 @@ public class SearchCarDialog extends JDialog {
 			} else if (e.getSource() == btnDelete) {
 				carNumber = (String) carItems[rowIdx][0];
 				carName = (String) carItems[rowIdx][1];
-				carColor = (String) carItems[rowIdx][2];
-				carSize = Integer.parseInt((String) carItems[rowIdx][3]);
+				carSize = Integer.parseInt((String) carItems[rowIdx][2]);
+				carColor = (String) carItems[rowIdx][3];
 				carMaker = (String) carItems[rowIdx][4];
 				CarVO carVO = new CarVO(carNumber, carName, carColor, carSize, carMaker);
 
@@ -174,8 +174,8 @@ public class SearchCarDialog extends JDialog {
 			} else if (e.getSource() == btnModify) {
 				carNumber = (String) carItems[rowIdx][0];
 				carName = (String) carItems[rowIdx][1];
-				carColor = (String) carItems[rowIdx][2];
-				carSize = Integer.parseInt((String) carItems[rowIdx][3]);
+				carSize = Integer.parseInt((String) carItems[rowIdx][2]);
+				carColor = (String) carItems[rowIdx][3];
 				carMaker = (String) carItems[rowIdx][4];
 				CarVO carVO = new CarVO(carNumber, carName, carColor, carSize, carMaker);
 
