@@ -26,14 +26,6 @@ public class RegMemDialog  extends JDialog{
     JButton btnReg;
     
     Member memberController;
-    String[][] memItems = new String[0][5];;
-	JTable rentTable;
-	RentTableModel rentTableModel;
-	String[] columnNames = { "아이디", "비밀번호", "이름", "주소", "전화번호" };
-
-	Object[][] memData = null; // 테이블에 표시될 회원 정보 저장 2차원 배열
-	int rowIdx = 0, colIdx = 0; // 테이블 수정 시 선택한 행과 열 인덱스 저장
-
     
     public RegMemDialog(Member memberController, String str) throws IOException, MemberException{
     	this.memberController = memberController;
