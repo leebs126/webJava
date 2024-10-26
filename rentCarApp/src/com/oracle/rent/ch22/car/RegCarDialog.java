@@ -65,9 +65,6 @@ public class RegCarDialog  extends JDialog{
 				tfSize.setText("");
 				tfColor.setText("");
 				tfMaker.setText("");
-				
-				//dispose();
-				
 			}
         });
     	
@@ -93,7 +90,7 @@ public class RegCarDialog  extends JDialog{
     	
         setLocation(400, 200);
         setSize(400,400);
-        setModal(true); //항상 부모창 위에 보이게 한다.
+        setModal(true);    //항상 부모창 위에 보이게 한다.
         setVisible(true);
     }
     

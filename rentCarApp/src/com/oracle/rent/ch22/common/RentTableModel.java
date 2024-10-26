@@ -33,9 +33,9 @@ public  class RentTableModel extends AbstractTableModel {
 		return columnNames[column];
 	}
 
-	 boolean[] columnEditables = new boolean[] {
+	boolean[] columnEditables = new boolean[] {
             false, true, true, true, true
-       };
+    };
 
      public boolean isCellEditable(int row, int column) {
             return columnEditables[column];
@@ -43,7 +43,7 @@ public  class RentTableModel extends AbstractTableModel {
      
   
      public void setValueAt(Object value,int row,int column){
-    	 data[row][column]=value;
+    	 data[row][column] = value;
  		fireTableCellUpdated(row, column);
  	}
 }

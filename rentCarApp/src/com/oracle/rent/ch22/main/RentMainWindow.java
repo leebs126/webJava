@@ -158,9 +158,12 @@ public class RentMainWindow extends JFrame {
 				System.out.println(e.getActionCommand());
 				if (e.getSource() == memMenu21) {
 					new RegMemDialog(memberController, "회원 등록창");
+					
 				} else if (e.getSource() == memMenu22) {
 					new SearchMemDialog(memberController,"회원 조회창");
+					
 				} else if (e.getSource() == memMenu23) {
+					
 				}
 			}catch(Exception ex) {
 				ex.printStackTrace();
@@ -175,8 +178,10 @@ public class RentMainWindow extends JFrame {
 			System.out.println(e.getActionCommand());
 			if (e.getSource() == carMenu11) {
 				new RegCarDialog("차량등록창");
+				
 			} else if (e.getSource() == carMenu12) {
 				new SearchCarDialog(carController, "차량조회창");
+				
 			} else if (e.getSource() == carMenu13) {
 			}
 		}

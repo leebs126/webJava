@@ -74,9 +74,6 @@ public class RegMemDialog  extends JDialog{
 				tfName.setText("");
 				tfAddress.setText("");
 				tfPhoneNum.setText("");
-				
-				//dispose();
-				
 			}
         });
     	

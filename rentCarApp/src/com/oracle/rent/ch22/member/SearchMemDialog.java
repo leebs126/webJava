@@ -36,7 +36,7 @@ public class SearchMemDialog extends JDialog {
 	String[] columnNames = { "아이디", "비밀번호", "이름", "주소", "전화번호" };
 
 	Object[][] memItems = new String[0][5]; // 테이블에 표시될 회원 정보 저장 2차원 배열 
-	int rowIdx = 0, colIdx = 0; // 테이블 수정 시 선택한 행과 열 인덱스 저장
+	int rowIdx = 0, colIdx = 0;             // 테이블 수정 시 선택한 행과 열 인덱스 저장
 	
 	Member memberController;
 
@@ -106,7 +106,7 @@ public class SearchMemDialog extends JDialog {
 			memTable.setModel(rentTableModel);
 		} else {
 			message("조회한 정보가 없습니다.");
-			memItems = new Object[10][10];
+			memItems = new Object[0][5];
 			rentTableModel = new RentTableModel(memItems, columnNames);
 			memTable.setModel(rentTableModel);
 		}
@@ -204,7 +204,6 @@ public class SearchMemDialog extends JDialog {
 				ListSelectionModel lsm = (ListSelectionModel) e.getSource();
 				rowIdx = lsm.getMinSelectionIndex();
 				System.out.println(rowIdx + " 번째 행이 선택됨...");
-//				System.out.println(memData[rowIdx][colIdx]);
 			}
 		}
 	}
@@ -214,11 +213,9 @@ public class SearchMemDialog extends JDialog {
 		@Override
 		public void valueChanged(ListSelectionEvent e) {
 			ListSelectionModel lsm = (ListSelectionModel)e.getSource( );
-//			rowIdx = lsm.getMinSelectionIndex();
 			colIdx=lsm.getMinSelectionIndex(); //클릭한 열 인덱스를 얻습니다.
 			if (!e.getValueIsAdjusting()){
 			System.out.println(rowIdx + " 번째 행, " + colIdx + "열 선택됨...");
-//			System.out.println(memData[rowIdx][colIdx]);
 			}
 		}
 

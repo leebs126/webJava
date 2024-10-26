@@ -31,7 +31,7 @@ public class SearchCarDialog extends JDialog {
 
 	JTable carTable;
 	RentTableModel rentTableModel;
-	String[] columnNames = { "차번호", "차이름", "배기량", "차색상", "차제조사" };
+	String[] columnNames = {"차번호", "차이름", "배기량", "차색상", "차제조사"};
 	Object[][] carItems;
 	int rowIdx = 0, colIdx = 0; // 테이블 수정 시 선택한 행과 열 인덱스 저장
 
@@ -53,7 +53,7 @@ public class SearchCarDialog extends JDialog {
 
 		ListSelectionModel colSel = carTable.getColumnModel().getSelectionModel();
 		colSel.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		colSel.addListSelectionListener(new ListColSelectionHandler());
+		colSel.addListSelectionListener(new ListColSelectionHandler());   // 테이블 열 클릭 시 이벤트 처리
 
 		panelSearch = new JPanel();
 		panelBtn = new JPanel();
@@ -196,27 +196,24 @@ public class SearchCarDialog extends JDialog {
 
 	// 테이블의 행 클릭 시 이벤트 처리
 	class ListRowSelectionHandler implements ListSelectionListener {
-
 		@Override
 		public void valueChanged(ListSelectionEvent e) {
 			if (!e.getValueIsAdjusting()) {
 				ListSelectionModel lsm = (ListSelectionModel) e.getSource();
 				rowIdx = lsm.getMinSelectionIndex();
 				System.out.println(rowIdx + " 번째 행이 선택됨...");
-//				System.out.println(memData[rowIdx][colIdx]);
 			}
 		}
 	}
 
+	// 테이블의 열 클릭 시 이벤트 처리
 	class ListColSelectionHandler implements ListSelectionListener {
-
 		@Override
 		public void valueChanged(ListSelectionEvent e) {
 			ListSelectionModel lsm = (ListSelectionModel) e.getSource();
 			colIdx = lsm.getMinSelectionIndex();
 			if (!e.getValueIsAdjusting()) {
 				System.out.println(rowIdx + " 번째 행, " + colIdx + "열 선택됨...");
-//			System.out.println(memData[rowIdx][colIdx]);
 			}
 		}
 
