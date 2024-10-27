@@ -209,8 +209,8 @@ public class RentMainWindow extends JFrame {
 	// 버전 메뉴 클릭 시 수행하는 메소드
 	public void version() { // 버전관리창 생성
 		final JDialog d = new JDialog(this, "버전관리");
-		JLabel jbver = new JLabel("       버전1.0");
-		JLabel jbdate = new JLabel("       2023.03.11");
+		JLabel jbver = new JLabel("       버전1.1");
+		JLabel jbdate = new JLabel("       2024.11.11");
 		JLabel jbauthor = new JLabel("       제작 : 웹 자바");
 
 		d.setLayout(new FlowLayout());

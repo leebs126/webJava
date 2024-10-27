@@ -47,6 +47,7 @@ public class SearchCarDialog extends JDialog {
 
 	private void init() {
 		carTable = new JTable();
+		
 		ListSelectionModel rowSel = carTable.getSelectionModel();
 		rowSel.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		rowSel.addListSelectionListener(new ListRowSelectionHandler()); // 테이블 행 클릭 시 이벤트 처리

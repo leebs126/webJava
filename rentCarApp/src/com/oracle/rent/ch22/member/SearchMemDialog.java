@@ -49,13 +49,14 @@ public class SearchMemDialog extends JDialog {
 
 	private void init() {
 		memTable = new JTable();
+		
 		ListSelectionModel rowSel = memTable.getSelectionModel();
 		rowSel.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		rowSel.addListSelectionListener(new ListRowSelectionHandler()); // 테이블 행 클릭 시 이벤트 처리
 
-		ListSelectionModel colSel = memTable.getColumnModel().getSelectionModel();
+		ListSelectionModel colSel = memTable.getColumnModel().getSelectionModel();  
 		colSel.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		colSel.addListSelectionListener(new ListColSelectionHandler());
+		colSel.addListSelectionListener(new ListColSelectionHandler());     // 테이블 열 클릭 시 이벤트 처리
 
 		panelSearch = new JPanel();
 		panelBtn = new JPanel();
@@ -125,6 +126,7 @@ public class SearchMemDialog extends JDialog {
 			if (e.getSource() == btnSearch) {
 				String id = tf.getText().trim();
 				memList = new ArrayList<MemberVO>();
+				
 				if (id != null && id.length() != 0) {
 					try {
 						MemberVO memVO = new MemberVO();
