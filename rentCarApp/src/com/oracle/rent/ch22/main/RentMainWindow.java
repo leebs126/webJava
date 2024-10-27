@@ -225,7 +225,6 @@ public class RentMainWindow extends JFrame {
 		d.addWindowListener(new WindowAdapter() { // 버전관리창 종료
 			public void windowClosing(WindowEvent e) {
 				d.dispose();
-				d.setVisible(false);
 			}
 		});
 	}
