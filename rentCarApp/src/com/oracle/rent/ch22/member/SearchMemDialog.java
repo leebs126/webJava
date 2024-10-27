@@ -210,6 +210,7 @@ public class SearchMemDialog extends JDialog {
 		}
 	}
 
+	// 테이블의 열 클릭 시 이벤트 처리
 	class ListColSelectionHandler implements ListSelectionListener {
 
 		@Override
