@@ -26,6 +26,7 @@ public class PreparedStatementTest {
 			
 			pstmt = conn.prepareStatement("INSERT INTO Member (id, name, height, weight, age)   VALUES (?, ?, ?, ?, ?)");
 			System.out.println("PreparedStatement 생성 성공");
+			
 			pstmt.setString(1, "0004");
 			pstmt.setString(2, "박지성");
 			pstmt.setInt(3, 178);
