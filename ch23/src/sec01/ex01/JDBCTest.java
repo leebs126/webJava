@@ -29,7 +29,7 @@ public class JDBCTest {
 			stmt = conn.createStatement();
 			System.out.println("Statement 생성 성공");
 			
-			String query = "INSERT INTO Member (id, name, height, weight, age) VALUES ( '0003','차범근' , 185, 85 ,23)";
+			String query = "INSERT INTO Member (id, name, height, weight, age) VALUES ( '0003','차범근', 185, 85 ,23)";
 			System.out.println(query);
 			int rows = stmt.executeUpdate(query);
 			System.out.println(rows+"개의 행 추가");
