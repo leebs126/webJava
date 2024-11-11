@@ -26,7 +26,7 @@ public class MemberDAO {
 		
 		List<MemberVO> memList = new ArrayList<MemberVO>();
 		
-		pstmt = conn.prepareStatement("SELECT id, name, height, weight, age FROM member ORDER BY id ASC");
+		pstmt = conn.prepareStatement("SELECT id, name, height, weight, age FROM Member ORDER BY id ASC");
 		ResultSet rs = pstmt.executeQuery();
 
 		while (rs.next()) {
