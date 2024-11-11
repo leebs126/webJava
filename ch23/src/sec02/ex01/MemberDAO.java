@@ -49,7 +49,7 @@ public class MemberDAO {
 	} // end listMember()
 	
 	public void insertMember(MemberVO memberVO) throws SQLException, ClassNotFoundException{
-		pstmt = conn.prepareStatement("INSERT INTO member (id, name, height, weight, age)  VALUES ( ?,?,?,?,? )");
+		pstmt = conn.prepareStatement("INSERT INTO Member (id, name, height, weight, age)  VALUES ( ?,?,?,?,? )");
 		pstmt.setString(1, memberVO.getId());
 		pstmt.setString(2, memberVO.getName());
 		pstmt.setInt(3, memberVO.getHeight());
