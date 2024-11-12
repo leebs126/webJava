@@ -10,7 +10,7 @@ import java.util.List;
 
 public class MemberDAO {
 	private static final String driver = "oracle.jdbc.driver.OracleDriver";
-	private static final String url = "jdbc:oracle:thin:@119.194.27.49:1521:XE";
+	private static final String url = "jdbc:oracle:thin:@localhost:1521:XE";
 	private static final String user = "C##user1";
 	private static final String pwd = "1234";
 
@@ -24,7 +24,7 @@ public class MemberDAO {
 
 	public List<MemberVO> selectMember(MemberVO memVO) throws SQLException, ClassNotFoundException {
 		String _name = memVO.getName();
-		List<MemberVO> list = new ArrayList<MemberVO>();
+		List<MemberVO> memList = new ArrayList<MemberVO>();
 		String query = "SELECT * FROM member  ";
 		if(_name != null && _name.length() != 0) {
 			query+=" where name = ? ORDER BY id ASC";
@@ -36,12 +36,9 @@ public class MemberDAO {
 			query += " ORDER BY id ";
 			pstmt = conn.prepareStatement(query);
 		}
-
-		
-
+		System.out.println(query);
 		
 		ResultSet rs = pstmt.executeQuery();
-
 		while (rs.next()) {
 			String id = rs.getString("id");
 			String name = rs.getString("name");
@@ -55,10 +52,10 @@ public class MemberDAO {
 			memberVO.setHeight(height);
 			memberVO.setWeight(weight);
 			memberVO.setAge(age);
-			list.add(memberVO);
+			memList.add(memberVO);
 		} // end while
 
-		return list;
+		return memList;
 	} // end listMember()
 
 
