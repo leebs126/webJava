@@ -61,7 +61,7 @@ public class MemberDAOImpl implements MemberDAO {
 
 	@Override
 	public void insertMember(MemberVO memVO) throws SQLException, ClassNotFoundException {
-		pstmt = conn.prepareStatement("INSERT INTO member (id, name, height, weight, age) VALUES ( ?,?,?,?,? )");
+		pstmt = conn.prepareStatement("INSERT INTO Member (id, name, height, weight, age) VALUES ( ?,?,?,?,? )");
 		pstmt.setString(1, memVO.getId());
 		pstmt.setString(2, memVO.getName());
 		pstmt.setInt(3, memVO.getHeight());
@@ -73,7 +73,7 @@ public class MemberDAOImpl implements MemberDAO {
 
 	@Override
 	public void updateMember(MemberVO memVO) throws SQLException, ClassNotFoundException {
-		pstmt = conn.prepareStatement("UPDATE member SET  name = ?"
+		pstmt = conn.prepareStatement("UPDATE Member SET  name = ?"
 				                                      + ", height = ?"
 				                                      + ", weight = ? "
 				                                      + ", age = ? "
@@ -90,7 +90,7 @@ public class MemberDAOImpl implements MemberDAO {
 
 	// 회원 정보 삭제 메소드
 	public void deleteMember(MemberVO memVO) throws SQLException, ClassNotFoundException {
-		pstmt = conn.prepareStatement("DELETE member WHERE id = ?");
+		pstmt = conn.prepareStatement("DELETE Member WHERE id = ?");
 		pstmt.setString(1, memVO.getId());
 		int rows = pstmt.executeUpdate();
 		System.out.println(rows+"개의 행 삭제");
