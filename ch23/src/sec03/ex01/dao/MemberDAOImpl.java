@@ -25,6 +25,7 @@ public class MemberDAOImpl implements MemberDAO {
 		connDB();
 	}
 
+	@Override
 	public List<MemberVO> selectMember(MemberVO memVO) throws SQLException, ClassNotFoundException {
 		List<MemberVO> memList = new ArrayList<MemberVO>();
 		String _name = memVO.getName();
@@ -56,8 +57,9 @@ public class MemberDAOImpl implements MemberDAO {
 		} // end while
 		rs.close();
 		return memList;
-	} // end list()
+	} 
 
+	@Override
 	public void insertMember(MemberVO memVO) throws SQLException, ClassNotFoundException {
 		pstmt = conn.prepareStatement("INSERT INTO member (id, name, height, weight, age) VALUES ( ?,?,?,?,? )");
 		pstmt.setString(1, memVO.getId());
@@ -66,10 +68,10 @@ public class MemberDAOImpl implements MemberDAO {
 		pstmt.setInt(4, memVO.getWeight());
 		pstmt.setInt(5, memVO.getAge());
 		int rows = pstmt.executeUpdate();
-		System.out.println(rows+"개의 레코드 추가");
-	} // end insertMember()
+		System.out.println(rows+"개의 행 추가");
+	} 
 
-	// 회원 정보 수정 메소드
+	@Override
 	public void updateMember(MemberVO memVO) throws SQLException, ClassNotFoundException {
 		pstmt = conn.prepareStatement("UPDATE member SET  name = ?"
 				                                      + ", height = ?"
@@ -82,7 +84,7 @@ public class MemberDAOImpl implements MemberDAO {
 		pstmt.setInt(4, memVO.getAge());
 		pstmt.setString(5, memVO.getId());
 		int rows = pstmt.executeUpdate();
-		System.out.println(rows +"개의 레코드 수정");
+		System.out.println(rows +"개의 행 수정");
 
 	}
 
@@ -91,9 +93,7 @@ public class MemberDAOImpl implements MemberDAO {
 		pstmt = conn.prepareStatement("DELETE member WHERE id = ?");
 		pstmt.setString(1, memVO.getId());
 		int rows = pstmt.executeUpdate();
-		System.out.println(rows+"개의 레코드 삭제");
-
-
+		System.out.println(rows+"개의 행 삭제");
 	}
 
 	private void connDB() {
