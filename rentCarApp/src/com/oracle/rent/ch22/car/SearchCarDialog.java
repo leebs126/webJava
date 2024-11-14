@@ -33,7 +33,7 @@ public class SearchCarDialog extends JDialog {
 	RentTableModel rentTableModel;
 	String[] columnNames = {"차번호", "차이름", "배기량", "차색상", "차제조사"};
 	Object[][] carItems;
-	int rowIdx = 0, colIdx = 0; // 테이블 수정 시 선택한 행과 열 인덱스 저장
+	int rowIdx = 0, colIdx = 0; // 테이블 수정, 삭제 시 선택한 행과 열 인덱스 저장
 
 	Car carController;
 

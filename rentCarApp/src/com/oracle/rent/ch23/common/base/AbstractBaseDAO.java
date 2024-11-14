@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public abstract class AbstractBaseDAO {
 	protected static final String driver = "oracle.jdbc.driver.OracleDriver";
-	protected static final String url = "jdbc:oracle:thin:@119.194.27.49:1521:XE";
+	protected static final String url = "jdbc:oracle:thin:@localhost:1521:XE";
 	protected static final String user = "C##user1";
 	protected static final String pwd = "1234";
 

@@ -63,7 +63,7 @@ public class SearchMemDialog extends JDialog {
 		panelBtn = new JPanel();
 
 		lMemName = new JLabel("이름");
-		tf = new JTextField("회원 이름을 입력하세요");
+		tf = new JTextField("회원 이름을 입력하세요.");
 		btnSearch = new JButton("조회하기");
 		btnSearch.addActionListener(new MemberBtnHandler());
 
@@ -112,7 +112,7 @@ public class SearchMemDialog extends JDialog {
 			memTable.setModel(rentTableModel);
 		} else {
 			message("조회한 정보가 없습니다.");
-			memItems = new Object[10][10];
+			memItems = new Object[0][5];
 			rentTableModel = new RentTableModel(memItems, columnNames);
 			memTable.setModel(rentTableModel);
 		}

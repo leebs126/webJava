@@ -62,7 +62,7 @@ public class SearchResDialog extends JDialog {
 
 		lResNumber = new JLabel("예약번호");
 	
-		tfResNumber = new JTextField("예약번호를 입력하세요");
+		tfResNumber = new JTextField("예약번호를 입력하세요.");
 		btnResSearch = new JButton("조회하기");
 		btnResSearch.addActionListener(new ResBtnHandler());
 
@@ -112,7 +112,7 @@ public class SearchResDialog extends JDialog {
 			resTable.setModel(rentTableModel);
 		} else {
 			showMessage("조회한 정보가 없습니다.");
-			resItems = new Object[10][10];
+			resItems = new Object[0][6];
 			rentTableModel = new RentTableModel(resItems, columnNames);
 			resTable.setModel(rentTableModel);
 		}

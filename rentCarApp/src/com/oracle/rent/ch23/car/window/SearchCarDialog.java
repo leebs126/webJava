@@ -119,7 +119,7 @@ public class SearchCarDialog extends JDialog {
 			carTable.setModel(rentTableModel);
 		} else {
 			message("조회한 정보가 없습니다.");
-			carItems = new Object[10][10];
+			carItems = new Object[0][5];
 			rentTableModel = new RentTableModel(carItems, columnNames);
 			carTable.setModel(rentTableModel);
 		}
