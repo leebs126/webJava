@@ -82,7 +82,13 @@ public class MemberDAO {
 		}catch(ClassNotFoundException e) {
 			e.printStackTrace();
 		}catch(SQLException e) {
-			e.printStackTrace();
+			try {
+				rs.close();
+				pstmt.close();
+				conn.close();
+			} catch (SQLException e1) {
+				e.printStackTrace();
+			}
 		}
 
 	}
