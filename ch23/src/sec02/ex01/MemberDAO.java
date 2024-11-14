@@ -72,7 +72,9 @@ public class MemberDAO {
 				rs.close();
 				pstmt.close();
 				conn.close();
-			} catch (SQLException e1) {}
+			} catch (SQLException e1) {
+				e.printStackTrace();
+			}
 		}
 
 	}

@@ -110,7 +110,9 @@ public class MemberDAOImpl implements MemberDAO {
 				rs.close();
 				pstmt.close();
 				conn.close();
-			} catch (SQLException e1) {}
+			} catch (SQLException e1) {
+				e.printStackTrace();
+			}
 		}
 	}
 }// end class MemberDAOImpl
