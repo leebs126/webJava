@@ -13,7 +13,7 @@ import sec03.ex01.vo.MemberVO;
 
 public class MemberDAOImpl implements MemberDAO {
 	private static final String driver = "oracle.jdbc.driver.OracleDriver"; 
-	private static final String url = "jdbc:oracle:thin:@119.194.27.49:1521:XE";
+	private static final String url = "jdbc:oracle:thin:@localhost:1521:XE";
 	private static final String user = "C##user1";
 	private static final String pwd = "1234";
 

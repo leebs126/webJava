@@ -78,7 +78,7 @@ public class BaseWindow extends JDialog {
 			memTable.setModel(memTableModel);
 		} else {
 			message("조회한 정보가 없습니다.");
-			memItems = new Object[10][10];
+			memItems = new Object[0][5];
 			memTableModel = new MemTableModel(memItems, columnNames);
 			memTable.setModel(memTableModel);
 		}
