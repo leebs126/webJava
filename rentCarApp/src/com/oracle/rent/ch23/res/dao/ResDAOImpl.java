@@ -21,7 +21,7 @@ public class ResDAOImpl  extends AbstractBaseDAO implements ResDAO{
 										     + "TO_CHAR(useBeginDate, 'YYYY-MM-DD') useBeginDate," 
 					                         +"TO_CHAR(returnDate, 'YYYY-MM-DD') returnDate,"
 										     + "resUserId "
-					                         +"FROM t_res  WHERE resNumber = ? ORDER BY resNumber");
+					                         +"FROM t_Res  WHERE resNumber = ? ORDER BY resNumber");
 			pstmt.setString(1, _resNumber);
 			
 		}else {
@@ -31,7 +31,7 @@ public class ResDAOImpl  extends AbstractBaseDAO implements ResDAO{
 				     + "TO_CHAR(useBeginDate, 'YYYY-MM-DD') useBeginDate," 
                      + "TO_CHAR(returnDate, 'YYYY-MM-DD') returnDate,"
 				     + "resUserId "
-				     + "FROM t_res  ORDER BY resNumber");
+				     + "FROM t_Res ORDER BY resNumber");
 		}
 		
 		ResultSet rs = pstmt.executeQuery();
@@ -62,7 +62,7 @@ public class ResDAOImpl  extends AbstractBaseDAO implements ResDAO{
 
 	@Override
 	public void insertResInfo(ResVO resVO) throws SQLException, ClassNotFoundException{
-		pstmt = conn.prepareStatement("INSERT INTO t_res (resNumber, resCarNumber, resDate, useBeginDate, returnDate, resUserId) " +
+		pstmt = conn.prepareStatement("INSERT INTO t_Res (resNumber, resCarNumber, resDate, useBeginDate, returnDate, resUserId) " +
                 "VALUES (?, ?, ?, ?, ?, ?)");
 		pstmt.setString(1, resVO.getResNumber());
 		pstmt.setString(2, resVO.getResCarNumber());
@@ -77,7 +77,7 @@ public class ResDAOImpl  extends AbstractBaseDAO implements ResDAO{
 
 	@Override
 	public void updateResInfo(ResVO resVO) throws SQLException, ClassNotFoundException{
-		pstmt = conn.prepareStatement("UPDATE t_res SET  resCarNumber = ?, resDate = ?, useBeginDate = ?, returnDate = ?, resUserId = ?  "+
+		pstmt = conn.prepareStatement("UPDATE t_Res SET  resCarNumber = ?, resDate = ?, useBeginDate = ?, returnDate = ?, resUserId = ?  "+
 	                                  "WHERE resNumber = ? ");
 		pstmt.setString(1, resVO.getResCarNumber());
 		pstmt.setString(2, resVO.getResDate());
@@ -91,7 +91,7 @@ public class ResDAOImpl  extends AbstractBaseDAO implements ResDAO{
 
 	@Override
 	public void deleteResInfo(ResVO resVO) throws SQLException, ClassNotFoundException{
-		pstmt = conn.prepareStatement("DELETE t_res WHERE resNumber = ?");
+		pstmt = conn.prepareStatement("DELETE t_Res WHERE resNumber = ?");
 		pstmt.setString(1, resVO.getResNumber());
 		pstmt.executeUpdate();
 	}

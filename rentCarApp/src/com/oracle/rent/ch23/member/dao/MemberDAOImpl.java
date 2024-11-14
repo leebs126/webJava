@@ -47,7 +47,7 @@ public class MemberDAOImpl extends AbstractBaseDAO implements MemberDAO {
 	} // end list()
 
 	public void insertMember(MemberVO memVO) throws SQLException, ClassNotFoundException {
-		pstmt = conn.prepareStatement("INSERT INTO t_member (memId, memPassword, memName, memAddress, memPhoneNum) VALUES (?, ?, ?, ?, ?)");
+		pstmt = conn.prepareStatement("INSERT INTO t_Member (memId, memPassword, memName, memAddress, memPhoneNum) VALUES (?, ?, ?, ?, ?)");
 		pstmt.setString(1, memVO.getMemId());
 		pstmt.setString(2, memVO.getMemPassword());
 		pstmt.setString(3, memVO.getMemName());
@@ -59,7 +59,7 @@ public class MemberDAOImpl extends AbstractBaseDAO implements MemberDAO {
 
 	// 회원 정보 수정 메소드
 	public void updateMember(MemberVO memVO) throws SQLException, ClassNotFoundException {
-		pstmt = conn.prepareStatement("UPDATE t_member SET  memName = ?, memPassword = ?, memAddress = ?, memPhoneNum = ? WHERE memId = ?");
+		pstmt = conn.prepareStatement("UPDATE t_Member SET  memName = ?, memPassword = ?, memAddress = ?, memPhoneNum = ? WHERE memId = ?");
 		pstmt.setString(1, memVO.getMemName());
 		pstmt.setString(2, memVO.getMemPassword());
 		pstmt.setString(3, memVO.getMemAddress());
@@ -71,7 +71,7 @@ public class MemberDAOImpl extends AbstractBaseDAO implements MemberDAO {
 
 	// 회원 정보 삭제 메소드
 	public void deleteMember(MemberVO memVO) throws SQLException, ClassNotFoundException {
-		pstmt = conn.prepareStatement("DELETE t_member WHERE memId = ?");
+		pstmt = conn.prepareStatement("DELETE t_Member WHERE memId = ?");
 		pstmt.setString(1, memVO.getMemId());
 		pstmt.executeUpdate();
 
