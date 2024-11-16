@@ -3,9 +3,9 @@ package com.oracle.rent.ch23.res.vo;
 public class ResVO {
 	private String resNumber;  //예약 번호
 	private String resCarNumber;  //예약 차번호
-	private String resDate;
-	private String useBeginDate;
-	private String returnDate;
+	private String resDate;         //예약 일자
+	private String useBeginDate;    //사용시작 일자
+	private String returnDate;       //반납일자
 	private String resUserId;  //예약자 아이디
 
 	//생성자

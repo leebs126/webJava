@@ -1,11 +1,11 @@
 package com.oracle.rent.ch23.car.vo;
 
 public class CarVO {
-	private String carNumber;
-	private String carName;
-	private String carColor;
-	private int carSize;
-	private String carMaker;
+	private String carNumber;   //차번호
+	private String carName;     //차이름
+	private String carColor;    //차색상
+	private int carSize;        //차배기량
+	private String carMaker;    //차제조사
 	
 	public CarVO() {}
 

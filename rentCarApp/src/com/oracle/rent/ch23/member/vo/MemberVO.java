@@ -3,11 +3,11 @@ package com.oracle.rent.ch23.member.vo;
 
 public class MemberVO {
 	// 필드 선언
-	private String memId;
-	private String memPassword;
-	private String memName;
-	private String memAddress;
-	private String memPhoneNum;
+	private String memId;         //회원 아이디
+	private String memPassword;   //회원 비밀번호
+	private String memName;       //회원 이름
+	private String memAddress;    //회원 주소
+	private String memPhoneNum;   //회원 전화번호
 
 	// 생성자 선언
 	public MemberVO() {}
