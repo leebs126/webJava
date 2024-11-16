@@ -19,11 +19,10 @@ public class ResDAOImpl  extends AbstractBaseDAO implements ResDAO{
 										     + "resCarNumber,"
 					                         + "TO_CHAR(resDate,'YYYY-MM-DD') resDate," 
 										     + "TO_CHAR(useBeginDate, 'YYYY-MM-DD') useBeginDate," 
-					                         +"TO_CHAR(returnDate, 'YYYY-MM-DD') returnDate,"
+					                         + "TO_CHAR(returnDate, 'YYYY-MM-DD') returnDate,"
 										     + "resUserId "
-					                         +"FROM t_Res  WHERE resNumber = ? ORDER BY resNumber");
+					                         + "FROM t_Res  WHERE resNumber = ? ORDER BY resNumber");
 			pstmt.setString(1, _resNumber);
-			
 		}else {
 			pstmt = conn.prepareStatement("SELECT resNumber,"
 				     + "resCarNumber,"
@@ -70,9 +69,7 @@ public class ResDAOImpl  extends AbstractBaseDAO implements ResDAO{
 		pstmt.setString(4, resVO.getUseBeginDate());
 		pstmt.setString(5, resVO.getReturnDate());
 		pstmt.setString(6, resVO.getResUserId());
-		
 		pstmt.executeUpdate();	
-		
 	}
 
 	@Override
@@ -85,7 +82,6 @@ public class ResDAOImpl  extends AbstractBaseDAO implements ResDAO{
 		pstmt.setString(4, resVO.getReturnDate());
 		pstmt.setString(5, resVO.getResUserId());
 		pstmt.setString(6, resVO.getResNumber());
-		
 		pstmt.executeUpdate();		
 	}
 

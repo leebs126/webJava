@@ -48,7 +48,6 @@ public class ResControllerImpl extends AbstractBaseController implements ResCont
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();			
 		}
-					
 	}
 
 	@Override
@@ -61,6 +60,4 @@ public class ResControllerImpl extends AbstractBaseController implements ResCont
 		
 	}
 	
-
-
 }

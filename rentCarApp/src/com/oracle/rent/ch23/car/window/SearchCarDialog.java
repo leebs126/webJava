@@ -76,6 +76,7 @@ public class SearchCarDialog extends JDialog {
 		btnReg = new JButton("렌터카등록하기");
 		btnModify = new JButton("수정하기");
 		btnDelete = new JButton("삭제하기");
+		
 		btnResReg = new JButton("렌터카 예약하기");
 		
 		btnReg.addActionListener(new CarBtnHandler());
@@ -178,7 +179,7 @@ public class SearchCarDialog extends JDialog {
 
 				carController.modCarInfo(carVO);
 
-			}else if(e.getSource() == btnReg) {
+			}else if(e.getSource() == btnReg) { 
 				new RegCarDialog(carController, "차량 등록창");
 				return;
 			}
@@ -201,12 +202,6 @@ public class SearchCarDialog extends JDialog {
 			if(e.getSource() == btnResReg) {
 				carNumber = (String) carItems[rowIdx][0];
 				System.out.println("차번호 : " + carNumber);
-				
-//				carName = (String) carItems[rowIdx][1];
-//				carColor = (String) carItems[rowIdx][2];
-//				carSize = Integer.parseInt((String) carItems[rowIdx][3]);
-//				carMaker = (String) carItems[rowIdx][4];
-//				CarVO carVO = new CarVO(carNumber, carName, carColor, carSize, carMaker);
 				
 				new RegResDialog(carNumber);
 			}
