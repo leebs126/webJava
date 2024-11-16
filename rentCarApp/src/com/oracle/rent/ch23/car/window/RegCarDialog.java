@@ -56,7 +56,7 @@ public class RegCarDialog  extends JDialog{
 				String carMaker=tfMaker.getText().trim();
 				
 				CarVO carVO=new CarVO(carNum,carName,carColor,carSize,carMaker);
-					carController.regCarInfo(carVO);
+				carController.regCarInfo(carVO);
 				
 				showMessage("차량을  등록했습니다.");
 				tfCarNum.setText("");

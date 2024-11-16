@@ -7,7 +7,7 @@ import com.oracle.rent.ch23.car.vo.CarVO;
 
 
 public interface CarDAO {
-public List<CarVO> selectCarInfo(CarVO carVO) throws SQLException, ClassNotFoundException;
+	public List<CarVO> selectCarInfo(CarVO carVO) throws SQLException, ClassNotFoundException;
 	
 	public void insertCarInfo(CarVO carVO) throws SQLException, ClassNotFoundException;
 	

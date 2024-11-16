@@ -16,8 +16,9 @@ public class ResControllerImpl extends AbstractBaseController implements ResCont
 	
 	public ResControllerImpl() {
 		resDAO = new ResDAOImpl();
-		
 	}
+	
+	
 	@Override
 	public List<ResVO> listResInfo(ResVO resVO) {
 		List<ResVO> resList = new ArrayList<ResVO>();
