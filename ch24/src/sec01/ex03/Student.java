@@ -1,6 +1,6 @@
 package sec01.ex03;
 
-public class Student<A, B, C> extends Person {
+public class Student<A, B, C> extends Person<A, B> {
 	
 	private B grade;
 	private C height;
