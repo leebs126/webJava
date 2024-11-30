@@ -9,7 +9,7 @@ package sec02.ex01;
 class MyMath{
 	
 	public void print() {
-		System.out.println("print() 메소드 호출");
+		System.out.println("print() 메서드 호출");
 	}
 }
 
