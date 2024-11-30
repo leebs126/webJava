@@ -6,7 +6,6 @@ package sec02.ex05;
 }
 
 class MyMath{
-	
 	public static void print() {
 		System.out.println("print() 정적 메소드 호출");
 	}
