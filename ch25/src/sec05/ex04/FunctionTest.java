@@ -23,8 +23,8 @@ public class FunctionTest {
 		System.out.println(feet1 + "  --> " + meter1);
 
 		System.out.println();
-		IntToDoubleFunction intDoubleFunction = value -> (int) (value / 3.28084);
-		double feet2 = intFunction.apply(3);
+		IntToDoubleFunction intDoubleFunction = value -> (3.28084 * value);
+		double feet2 = intDoubleFunction.applyAsDouble(3);
 		System.out.println("3  --> " + feet2);
 
 		System.out.println();
