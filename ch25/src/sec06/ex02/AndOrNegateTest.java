@@ -32,10 +32,10 @@ public class AndOrNegateTest {
 		
 		//negate()
 		predicateAB = predicateA.negate();
-		result = predicateAB.test(15); //!(15 > 10 || 15 < 20)  --> false
+		result = predicateAB.test(15); //!(15 > 10)  --> false
 		System.out.println(result);
 		
-		result = predicateAB.test(100);  //!(100 > 10 || 100 < 20)  --> false
+		result = predicateAB.test(100);  //!(100 > 10)  --> false
 		System.out.println(result);
 		System.out.println();
 		
