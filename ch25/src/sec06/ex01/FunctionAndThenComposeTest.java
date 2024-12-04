@@ -12,7 +12,7 @@ public class FunctionAndThenComposeTest {
 		System.out.println(city1);
 		
 		Function<Student, String> functionBA = functionB.compose(functionA);
-		String city2 = functionAB.apply(new Student("이순신",3 ,new Address("대한민국", "대전시")));
+		String city2 = functionBA.apply(new Student("이순신",3 ,new Address("대한민국", "대전시")));
 		System.out.println(city2);
 	}
 
