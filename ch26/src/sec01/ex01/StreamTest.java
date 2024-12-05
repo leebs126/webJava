@@ -18,7 +18,7 @@ public class StreamTest {
 		//Stream을 사용할 경우
 		List<String> fruitList2 = Arrays.asList("apple","banana","orange","mango","strawberry");
 		Stream<String> fruitStream2 = fruitList2.stream();
-		fruitStream2.forEach(name->System.out.println(name));
+		fruitStream2.forEach(fruit->System.out.println(fruit));
 		
 
 	}
