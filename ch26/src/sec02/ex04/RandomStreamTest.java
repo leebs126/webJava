@@ -15,8 +15,8 @@ public class RandomStreamTest {
 		System.out.println();
 		System.out.println();
 		
-//		IntStream intStream3 = new Random().ints();
-//		intStream2.forEach(System.out::println);
+//		IntStream intStream3 = new Random().ints();  //무한 정수 스트림
+//		intStream3.forEach(System.out::println);
 		
 		DoubleStream doubleStream1 = new Random().doubles(5);
 		doubleStream1.forEach(System.out::println);
