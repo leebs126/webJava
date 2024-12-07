@@ -10,7 +10,4 @@ public class Box<T extends Person> {
 	public void setData(T data) {
 		this.data = data;
 	}
-	
-	
-
 }

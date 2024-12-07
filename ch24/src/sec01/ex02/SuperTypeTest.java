@@ -44,7 +44,7 @@ public class SuperTypeTest {
 //		printEmployeeList(collegeList);
 		
 		
-//		printStudentList(personList);
+		printStudentList(personList);
 //		printStudentList(employeeList);
 		printStudentList(studentList);
 //		printStudentList(collegeList);

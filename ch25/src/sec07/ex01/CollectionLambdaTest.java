@@ -35,6 +35,7 @@ public class CollectionLambdaTest {
 		studentList.replaceAll(s -> new Student("홍길동", 3));
 		studentList.forEach(s -> System.out.println(s.getName()));
 
+		
 		Map<String, Integer> scoreMap = new HashMap<>();
 		scoreMap.put("홍길동", 90);
 		scoreMap.put("이순신", 80);
