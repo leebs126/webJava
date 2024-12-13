@@ -12,7 +12,7 @@ public class PeekTest {
 //		fruitList.stream()
 //		.distinct()
 //		.filter(s -> s.length() < 8)
-//		.peek(a->System.out.println(a ));
+//		.peek(a->System.out.println(a));
 
 		
 		fruitList.stream()
