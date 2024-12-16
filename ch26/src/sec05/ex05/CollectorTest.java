@@ -33,10 +33,10 @@ public class CollectorTest {
 		
 		//남학생들만 HashSet으로 출력
 		
-		Set<Student> maleList = studentList.stream()
+		Set<Student> maleSet = studentList.stream()
 										.filter(s->s.getGender() == Student.MALE)
 										.collect(Collectors.toCollection(HashSet::new));
-		maleList.stream()
+		maleSet.stream()
 				.forEach(s->System.out.println(s.getName()));
 		System.out.println();
 		
