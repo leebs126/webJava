@@ -1,8 +1,8 @@
 package sec05.ex05;
 
 public class Student {
-	public static int MALE = 1;
-	public static int FEMALE = 2;
+	public static final int MALE = 1;
+	public static final int FEMALE = 2;
 	
 	private String name;
 	private int grade;
