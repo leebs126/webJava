@@ -20,7 +20,7 @@ public class ThreadGroupTest2 {
         try{Thread.sleep(2000);}catch (InterruptedException e){}
         
 
-        myThreadGroup.interrupt(); //main 스레드 그룹의 하위 스레드 그룹에 인터럽트를 호출합니다.
+        myThreadGroup.interrupt(); //main 스레드 그룹의 하위 "myThreadGroup" 드 그룹에 인터럽트를 호출합니다.
         System.out.println();
         
         try {Thread.sleep(5000);} catch (InterruptedException e) {}
