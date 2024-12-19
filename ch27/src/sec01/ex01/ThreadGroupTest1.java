@@ -12,6 +12,7 @@ public class ThreadGroupTest1 {
 		
 		Map<Thread, StackTraceElement[]> map = Thread.getAllStackTraces();
 		Set<Thread> threads = map.keySet();
+		
 		for(Thread t : threads) {
 			System.out.println("스레드이름: " + t.getName());
 			System.out.println("소속그룹: " + t.getThreadGroup().getName());
