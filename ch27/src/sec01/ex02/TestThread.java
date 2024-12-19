@@ -1,9 +1,11 @@
 package sec01.ex02;
 
 public class TestThread extends Thread {
+	
 	public TestThread(ThreadGroup threadGroup, String threadName) {
-		 super(threadGroup, threadName); // 스레드 그룹과 이름 설정
+		 super(threadGroup, threadName); // 스레드 그룹과  스레드 이름 설정
 	}
+	
 	@Override
 	public void run() {
 		while (true) {
@@ -14,6 +16,7 @@ public class TestThread extends Thread {
 				break;
 			}
 		}
+		
 		System.out.println(getName() + " 종료");
 	}
 
