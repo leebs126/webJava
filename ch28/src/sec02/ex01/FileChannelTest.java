@@ -8,11 +8,10 @@ import java.nio.file.StandardOpenOption;
 
 public class FileChannelTest {
 	public static void main(String[] args) throws IOException {
-		FileChannel fileChannel = FileChannel.open(
-				Paths.get("src\\sec02\\ex01\\test.txt"), 
-				StandardOpenOption.CREATE,
-				StandardOpenOption.READ,
-				StandardOpenOption.WRITE);
+		FileChannel fileChannel = FileChannel.open(Paths.get("src\\sec02\\ex01\\test.txt"), 
+													StandardOpenOption.CREATE,
+													StandardOpenOption.READ,
+													StandardOpenOption.WRITE);
 		
 		//파일 쓰기
 		String message = "안녕하세요";
