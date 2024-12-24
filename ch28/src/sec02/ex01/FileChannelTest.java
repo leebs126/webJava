@@ -17,7 +17,7 @@ public class FileChannelTest {
 		String message = "안녕하세요";
 		ByteBuffer byteBuffer1 = ByteBuffer.allocate(20);
 		byteBuffer1.put(message.getBytes());
-		byteBuffer1.flip();
+		byteBuffer1.flip();  //현재 position 위치에 limit를 위치 시킵니다. 
 		fileChannel.write(byteBuffer1);
 		
 		//파일 읽기
