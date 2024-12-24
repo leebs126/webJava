@@ -27,16 +27,18 @@ public class IntBufferTest {
 		intBuffer.flip(); //현재  position을 limit로 설정하고, position을 0으로 설정합니다.
 		while(intBuffer.hasRemaining()) { //현재 position과 limitv 사이에 데이터가 있으면 차례대로 출력합니다.
 			position = intBuffer.position();
-			System.out.println("position: " + position+", 값: " + intBuffer.get());
+			System.out.println("position: " + position + ", 값: " + intBuffer.get());
 		}
 		System.out.println();
 		
 		intBuffer.clear(); //현재 position을 0으로 설정한 후, limit를 capacity로 설정합니다.
 		intBuffer.put(4, 100); //마지막 요소에 값을 넣습니다.
+//		System.out.println("position: " + intBuffer.position() + " limit: " + intBuffer.limit()) ;
+		
 		intBuffer.rewind();   //posiotion을 0으로 설정합니다. 
 		while(intBuffer.hasRemaining()) {
 			position = intBuffer.position();
-			System.out.println("position: " + position+", 값: " + intBuffer.get());
+			System.out.println("position: " + position + ", 값: " + intBuffer.get());
 		}
 	}
 
