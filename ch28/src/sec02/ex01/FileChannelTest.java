@@ -24,7 +24,8 @@ public class FileChannelTest {
 		ByteBuffer byteBuffer2 = ByteBuffer.allocate(20);
 		fileChannel.position(0);
 		fileChannel.read(byteBuffer2);
-		byteBuffer2.flip();
+//		byteBuffer2.flip();
+		
 		byte[] b = byteBuffer2.array();
 		System.out.println(new String(b));
 		
