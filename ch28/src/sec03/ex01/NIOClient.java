@@ -41,7 +41,7 @@ public class NIOClient implements ActionListener {
 		jframe = new JFrame("멀티 채팅 프로그램"); 
 		jtf = new JTextField(30); 
 		jta = new JTextArea("", 10, 50); 
-		jlb1 = new JLabel("Usage ID : [[ "+ id + "]]"); 
+		jlb1 = new JLabel("사용자 아이디 : [[ " + id + "]]"); 
 		jbtn = new JButton("종료"); 
 		jp1 = new JPanel(); 
 		jp2 = new JPanel(); 

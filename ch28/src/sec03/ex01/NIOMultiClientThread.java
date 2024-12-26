@@ -7,12 +7,12 @@ import java.nio.charset.*;
 import java.util.*;
 
 public class NIOMultiClientThread extends Thread {
-	private NIOClient mc;
+	private NIOClient nc;
 	private Charset charset;
 	private CharsetDecoder decoder;
 
-	public NIOMultiClientThread(NIOClient mc) {
-		this.mc = mc;
+	public NIOMultiClientThread(NIOClient nc) {
+		this.nc = nc;
 		charset = Charset.forName("UTF-8");
 		decoder = charset.newDecoder();
 	}
@@ -20,7 +20,7 @@ public class NIOMultiClientThread extends Thread {
 	public void run() {
 		String message = null;
 		String[] receivedMsg = null;
-		Selector selector = mc.getSelector();
+		Selector selector = nc.getSelector();
 		boolean isStop = false;
 		while (!isStop) {
 			try {
@@ -40,15 +40,15 @@ public class NIOMultiClientThread extends Thread {
 			}
 			System.out.println(receivedMsg[0] + "," + receivedMsg[1]);
 			if (receivedMsg[1].equals("exit")) {
-				if (receivedMsg[0].equals(mc.getId())) {
-					mc.exit();
+				if (receivedMsg[0].equals(nc.getId())) {
+					nc.exit();
 				} else {
-					mc.getJta().append(receivedMsg[0] + "님이 종료하셨습니다." + System.getProperty("line.separator"));
-					mc.getJta().setCaretPosition(mc.getJta().getDocument().getLength());
+					nc.getJta().append(receivedMsg[0] + "님이 종료하셨습니다." + System.getProperty("line.separator"));
+					nc.getJta().setCaretPosition(nc.getJta().getDocument().getLength());
 				}
 			} else {
-				mc.getJta().append(receivedMsg[0] + " : " + receivedMsg[1] + System.getProperty("line.separator"));
-				mc.getJta().setCaretPosition(mc.getJta().getDocument().getLength());
+				nc.getJta().append(receivedMsg[0] + " : " + receivedMsg[1] + System.getProperty("line.separator"));
+				nc.getJta().setCaretPosition(nc.getJta().getDocument().getLength());
 
 			}
 		}

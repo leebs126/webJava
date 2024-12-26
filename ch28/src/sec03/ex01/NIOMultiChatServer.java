@@ -19,9 +19,9 @@ public class NIOMultiChatServer {
 			selector = Selector.open();
 			serverChannel = ServerSocketChannel.open();
 			serverChannel.configureBlocking(false);
-			serverSocket = serverChannel.socket();
 			InetSocketAddress isa = new InetSocketAddress(host, port);
-			serverSocket.bind(isa);
+//			serverSocket.bind(isa);
+			serverChannel.bind(isa);
 			serverChannel.register(selector, SelectionKey.OP_ACCEPT);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -33,7 +33,7 @@ public class NIOMultiChatServer {
 		try {
 			while (true) {
 				System.out.println("요청 대기 중...");
-				selector.select();
+				selector.select();  //미리 등록된 채널들을 깨운 후, 채널들의 키수를 리턴
 				Iterator iterator = selector.selectedKeys().iterator();
 				while (iterator.hasNext()) {
 					SelectionKey key = (SelectionKey) iterator.next();
