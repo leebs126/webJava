@@ -11,8 +11,7 @@ public class NIOMultiChatServer {
 	private int port = 9988;
 	private Selector selector;
 	private ServerSocketChannel serverChannel;
-	private ServerSocket serverSocket;
-	private ArrayList list = new ArrayList();
+	private ArrayList<SocketChannel> list = new ArrayList<>();
 
 	public NIOMultiChatServer() {
 		try {
@@ -32,8 +31,8 @@ public class NIOMultiChatServer {
 		try {
 			while (true) {
 				System.out.println("요청 대기 중...");
-				selector.select();  //미리 등록된 채널들을 깨운 후, 채널들의 키수를 리턴
-				Iterator iterator = selector.selectedKeys().iterator();
+				selector.select();  //미리 등록된 채널들을 깨운 후, 채널들의 키 수를 리턴
+				Iterator<SelectionKey> iterator = selector.selectedKeys().iterator();
 				while (iterator.hasNext()) {
 					SelectionKey key = (SelectionKey) iterator.next();
 					if (key.isAcceptable()) {
