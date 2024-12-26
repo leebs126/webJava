@@ -25,10 +25,10 @@ public class NIOMultiChatServer {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		readyServer();
+		startServer();
 	}
 
-	public void readyServer() {
+	public void startServer() {
 		try {
 			while (true) {
 				System.out.println("요청 대기 중...");
