@@ -22,10 +22,12 @@ public class NIOMultiClientThread extends Thread {
 		String[] receivedMsg = null;
 		Selector selector = nc.getSelector();
 		boolean isStop = false;
+		
 		while (!isStop) {
 			try {
 				selector.select();
 				Iterator iterator = selector.selectedKeys().iterator();
+				
 				while (iterator.hasNext()) {
 					SelectionKey key = (SelectionKey) iterator.next();
 					if (key.isReadable()) {

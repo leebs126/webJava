@@ -33,6 +33,7 @@ public class NIOMultiChatServer {
 				System.out.println("요청 대기 중...");
 				selector.select();  //미리 등록된 채널들을 깨운 후, 채널들의 키 수를 리턴
 				Iterator<SelectionKey> iterator = selector.selectedKeys().iterator();
+				
 				while (iterator.hasNext()) {
 					SelectionKey key = (SelectionKey) iterator.next();
 					if (key.isAcceptable()) {

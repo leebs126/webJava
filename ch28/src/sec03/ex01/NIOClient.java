@@ -154,6 +154,7 @@ public class NIOClient implements ActionListener {
 	public String getId(){ 
 		return id; 
 	} 
+	
 	public Selector getSelector(){ 
 		return selector; 
 	} 
