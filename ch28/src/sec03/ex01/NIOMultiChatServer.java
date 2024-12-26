@@ -20,7 +20,6 @@ public class NIOMultiChatServer {
 			serverChannel = ServerSocketChannel.open();
 			serverChannel.configureBlocking(false);
 			InetSocketAddress isa = new InetSocketAddress(host, port);
-//			serverSocket.bind(isa);
 			serverChannel.bind(isa);
 			serverChannel.register(selector, SelectionKey.OP_ACCEPT);
 		} catch (IOException e) {
