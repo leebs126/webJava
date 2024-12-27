@@ -107,7 +107,7 @@ public class NIOClient implements ActionListener {
 					buffer.clear(); 
 					buffer.put(msg.getBytes()); 
 					buffer.flip(); 
-					sc.write(buffer); 
+					sc.write(buffer);   //서버로 메시지를 전송합니다. 
 				} catch (IOException ee) { 
 					ee.printStackTrace(); 
 				} 
