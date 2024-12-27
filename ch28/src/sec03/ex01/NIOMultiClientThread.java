@@ -53,7 +53,7 @@ public class NIOMultiClientThread extends Thread {
 				nc.getJta().setCaretPosition(nc.getJta().getDocument().getLength());
 
 			}
-		}
+		}//end while
 	}
 
 	public String read(SelectionKey key) {

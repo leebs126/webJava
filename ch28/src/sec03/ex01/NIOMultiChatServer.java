@@ -42,8 +42,8 @@ public class NIOMultiChatServer {
 						read(key);
 					}
 					iterator.remove();
-				}
-			}
+				}//end while
+			}//end while
 
 		} catch (Exception e) {
 			e.printStackTrace();
