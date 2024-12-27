@@ -130,7 +130,7 @@ public class NIOClient implements ActionListener {
 		System.exit(0); 
 	} 
 	public void init() throws IOException {
-		buffer = ByteBuffer.allocateDirect(1024); 
+		buffer = ByteBuffer.allocateDirect(1024);  //메시지 송신용 버퍼
 		selector = Selector.open(); 
 		sc = SocketChannel.open(new InetSocketAddress("localhost",9988)); 
 		sc.configureBlocking(false); 

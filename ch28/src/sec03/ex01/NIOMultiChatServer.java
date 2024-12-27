@@ -67,7 +67,7 @@ public class NIOMultiChatServer {
 
 	public void read(SelectionKey key) {
 		SocketChannel socketChannel = (SocketChannel) key.channel();
-		ByteBuffer buffer = ByteBuffer.allocateDirect(1024);
+		ByteBuffer buffer = ByteBuffer.allocateDirect(1024);  //메시지 수신용 버퍼
 		try {
 			int read = socketChannel.read(buffer);
 		} catch (IOException e) {

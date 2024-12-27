@@ -58,7 +58,7 @@ public class NIOMultiClientThread extends Thread {
 
 	public String read(SelectionKey key) {
 		SocketChannel sc = (SocketChannel) key.channel();
-		ByteBuffer buffer = ByteBuffer.allocateDirect(1024);
+		ByteBuffer buffer = ByteBuffer.allocateDirect(1024);  //메시지 수신용 버퍼
 		try {
 			sc.read(buffer);
 		} catch (IOException e) {
