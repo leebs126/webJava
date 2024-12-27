@@ -129,6 +129,8 @@ public class NIOClient implements ActionListener {
 	public void exit(){ 
 		System.exit(0); 
 	} 
+	
+	
 	public void init() throws IOException {
 		buffer = ByteBuffer.allocateDirect(1024);  //메시지 송신용 버퍼
 		selector = Selector.open(); 
