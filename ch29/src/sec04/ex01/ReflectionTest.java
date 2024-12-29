@@ -20,14 +20,14 @@ public class ReflectionTest {
 		//메소드 찾기
 		Method[] methods = clazz.getDeclaredMethods();  
 		for(Method m : methods) {
-			System.out.println(m.getName()); //메소드 이름을 출력합니다.
+			System.out.println(m.getName()); //메서드 이름을 출력합니다.
 		}
 		System.out.println();
 		
 		//필드 가져오기
 		Field[] fields = clazz.getDeclaredFields();
 		for(Field f : fields) {
-			System.out.println(f.getName() +", " +f.getModifiers()); //메소드 이름을 출력합니다.
+			System.out.println(f.getName() +", " +f.getModifiers()); //메서드 이름과 접근 제한자를 출력합니다.
 		}
 	}
 
