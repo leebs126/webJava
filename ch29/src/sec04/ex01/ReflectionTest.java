@@ -9,7 +9,7 @@ public class ReflectionTest {
 	public static void main(String[] args) throws ClassNotFoundException {
 		Class clazz = Class.forName("sec04.ex01.Student");
 		
-		//생성자 찾기
+		//생성자 정보 얻기
 		Constructor[]  constructors = clazz.getDeclaredConstructors();
 		
 		for(Constructor c : constructors) {
