@@ -5,8 +5,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CheckPasswordTest {
+	
 	private static String checkPassword(String id, String pwd) {
-		// 비밀번호 포맷 확인(영문, 특수문자, 숫자 포함 8자 이상)
+		// 비밀번호 지정 규칙 확인(영문, 특수문자, 숫자 포함 8자 이상)
 		Pattern passPattern1 = Pattern.compile("^(?=.*[a-zA-Z])(?=.*\\d)(?=.*\\W).{8,20}$");
 		Matcher passMatcher1 = passPattern1.matcher(pwd);
 
@@ -15,7 +16,7 @@ public class CheckPasswordTest {
 		}
 
 		// 반복된 문자 확인
-		Pattern passPattern2 = Pattern.compile("(\\w)\\1\\1\\1");
+		Pattern passPattern2 = Pattern.compile("(\\w)\\1\\1\\1");   //[a-zA-Z_0-9]와 동일
 		Matcher passMatcher2 = passPattern2.matcher(pwd);
 
 		if (passMatcher2.find()) {
@@ -28,7 +29,7 @@ public class CheckPasswordTest {
 		}
 
 		// 특수문자 확인
-		Pattern passPattern3 = Pattern.compile("\\W");
+		Pattern passPattern3 = Pattern.compile("\\W");   //[^a-zA-Z_0-9]와 동일
 		Pattern passPattern4 = Pattern.compile("[!@#$%^*+=-]");
 
 		for (int i = 0; i < pwd.length(); i++) {
@@ -67,7 +68,7 @@ public class CheckPasswordTest {
 			}
 
 			if (diff01 == -1 && diff12 == -1) {
-				descSeqCharCnt -= 1;
+				descSeqCharCnt += 1;
 			}
 		}
 
