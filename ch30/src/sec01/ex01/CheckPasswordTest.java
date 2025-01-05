@@ -16,7 +16,7 @@ public class CheckPasswordTest {
 		}
 
 		// 반복된 문자 확인
-		Pattern passPattern2 = Pattern.compile("(\\w)\\1\\1\\1");   //[a-zA-Z_0-9]와 동일
+		Pattern passPattern2 = Pattern.compile("(\\w)\\1\\1\\1");   //\\w는 [a-zA-Z_0-9]와 동일
 		Matcher passMatcher2 = passPattern2.matcher(pwd);
 
 		if (passMatcher2.find()) {
