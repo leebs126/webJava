@@ -8,6 +8,7 @@ public class EqualsDeepEqualsTest {
 		String str1 = "hello";
 		String str2 = "hello";
 		String str3 = "HELLO";
+		
 		System.out.println(Objects.equals(str1, str2)); //true
 		System.out.println(Objects.equals(str1, str3));  //false
 		System.out.println(Objects.equals(str1, null));  //false
