@@ -9,19 +9,19 @@ public class TemporalAdjusterTest {
 		System.out.println(now);
 		System.out.println();
 		
+		//년 정보 
 		LocalDateTime testDateTime = null;
-		testDateTime = now.with(TemporalAdjusters.firstDayOfYear());  //올해의 첫번째 날 
+		testDateTime = now.with(TemporalAdjusters.firstDayOfYear());  //금년의 첫번째 날 
 		System.out.println(testDateTime);
 		
-		//년 정보 변경
-		testDateTime = now.with(TemporalAdjusters.lastDayOfYear());  //올해의 마지막 날
+		testDateTime = now.with(TemporalAdjusters.lastDayOfYear());  //금년의 마지막 날
 		System.out.println(testDateTime);
 		
-		testDateTime = now.with(TemporalAdjusters.firstDayOfNextYear());  //올해의 마지막 날
+		testDateTime = now.with(TemporalAdjusters.firstDayOfNextYear());  //내년의 마지막 날
 		System.out.println(testDateTime);
 		System.out.println();
 		
-		//월 정보 변경
+		//월 정보 
 		testDateTime = now.with(TemporalAdjusters.firstDayOfMonth());  //이번달의 첫번째 날
 		System.out.println(testDateTime);
 		
