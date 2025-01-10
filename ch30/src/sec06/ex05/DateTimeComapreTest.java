@@ -21,7 +21,7 @@ public class DateTimeComapreTest {
 			System.out.println("지원이 마감되었습니다.");
 		}
 
-		// until() 메소드
+		// until() 메서드
 		long remainYears1 = beginDateTime.until(endDateTime, ChronoUnit.YEARS);
 		System.out.println("남은 년: " + remainYears1);  //1년
 
@@ -32,7 +32,7 @@ public class DateTimeComapreTest {
 		System.out.println("남은 일: " + remainDays1);  //446일
 		System.out.println();
 
-		// between() 메소드
+		// between() 메서드
 		long remainYears2 = ChronoUnit.YEARS.between(beginDateTime, endDateTime);
 		System.out.println("남은 년: " + remainYears2);
 
@@ -43,7 +43,7 @@ public class DateTimeComapreTest {
 		System.out.println("남은 일: " + remainDays2);
 		System.out.println();
 
-		// Period의 between() 메소드(각각의 년,월,일의 차이를 구합니다.)
+		// Period의 between() 메서드(각각의 년,월,일의 차이를 구합니다.)
 		Period period = Period.between(beginDateTime.toLocalDate(), endDateTime.toLocalDate());
 		System.out.println("남은 년: " + period.getYears());   
 		System.out.println("남은 월: " + period.getMonths());
