@@ -4,11 +4,11 @@ import java.io.UnsupportedEncodingException;
 
 public class UTF16Test {
 	public static void main(String[] args) throws UnsupportedEncodingException {
-		byte[] b1 = "aaa".getBytes("UTF-16");
-		byte[] b2 = "ê°€ë‚˜ë‹¤".getBytes("UTF-16");
+		byte[] b1 = "aaa".getBytes("UTF-16");      
+		byte[] b2 = "°¡³ª´Ù".getBytes("UTF-16");  
 		
-		System.out.println(b1.length);
-		System.out.println(b2.length);
+		System.out.println(b1.length);  //8
+		System.out.println(b2.length);  //8
 		System.out.println();
 		
 		for(byte b : b1) {
