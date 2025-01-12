@@ -16,6 +16,7 @@ public class CharsetConversionTest {
 
 		byte[] utf8StringBuffer = decodedFromEucKr.getBytes("UTF-8");
 		System.out.println();
+		
 		System.out.println("UTF-8 문자열 길이: " + utf8StringBuffer.length);
 		String decodedFromUtf8 = new String(utf8StringBuffer, "UTF-8");
 		System.out.println("UTF-8로 변환된 문자열: " + decodedFromUtf8);
