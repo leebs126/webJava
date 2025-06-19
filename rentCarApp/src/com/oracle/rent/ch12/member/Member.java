@@ -7,18 +7,20 @@ public class Member extends AbstractBase {
 	String memberData;
 	
 	// 기존 회원 정보 조회
-		public String viewMember(MemberVO vo) {
-			memberData="회원 아이디:" + vo.id+","+
-			     	"\n회원 비번:" + vo.password+","+
-			     	"\n회원 이름:" + vo.name+","+
-		            "\n회원 전화번호:" + vo.phoneNum;
-			
-			System.out.println("회원 정보를 조회합니다.");
-			System.out.println("회원 조회시간: " + showTime());
-			
-			DataUtil.decodeData(memberData);			
-			return memberData;
-		}
+	public String viewMember(MemberVO vo) {
+//		DataUtil dataUtil = new DataUtil(); //인스턴스 생성을 불허합니다.
+		
+		memberData="회원 아이디:" + vo.id+","+
+		     	"\n회원 비번:" + vo.password+","+
+		     	"\n회원 이름:" + vo.name+","+
+	            "\n회원 전화번호:" + vo.phoneNum;
+		
+		System.out.println("회원 정보를 조회합니다.");
+		System.out.println("회원 조회시간: " + showTime());
+		
+		DataUtil.decodeData(memberData);			
+		return memberData;
+	}
 		
 	// 새로운 회원 등록
 	public void regMember(MemberVO vo) {
